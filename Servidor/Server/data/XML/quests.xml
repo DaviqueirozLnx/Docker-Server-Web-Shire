@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quests>
+    <quest name="Primeiros Itens" startstorageid="1001" startstoragevalue="-1" endstoragevalue="1">
+        <mission name="O Bau de Itens!" storageid="1001" startvalue="-1" endvalue="1">
+            <missionstate id="1" description="Seja bem vindo ao Shire Legends, o capitão deixou um bau com itens para você da inicio a sua jornada."/>
+      </mission>
+    </quest>
+    <quest name="Infestação do armazém" startstorageid="2467" startstoragevalue="1" endstoragevalue="3">
+        <mission name="Recupere o queijo!" storageid="2467" startvalue="1" endvalue="3">
+            <missionstate id="1" description="O Glovian anda muito preocupado com a comida que está no seu armazém. Ajude-o com a infestação de ratos, mate todos e pegue o queijo no baú."/>
+            <missionstate id="2" description="Fale com Glovian para agradecer pela ajuda com o armazém."/>
+            <missionstate id="3" description="Muito obrigado, fico grato por me ajudar nobre, graças a você minha mercadoria está a salvo."/>
+        </mission>
+    </quest>
+
+
+	<quest name="(Addon) Citizen Backpack" startstorageid="40000" startstoragevalue="1" endstoragevalue="2">
+        <mission name="Citizen Backpack" storageid="40000" startvalue="1" endvalue="2">
+            <missionstate id="1" description="Não tem problema, apenas me traga 100 pieces of fine minotaur leather e eu as colocarei"/>
+            <missionstate id="2" description="Que maravilha, vejo que trouxe os itens que foi solicitado, como prometido irei lhe entregar os melhores addons já feito por mim, espero que goste!"/>
+        </mission>
+    </quest>
+
+
+	<quest name="(Addon) Citizen Hat" startstorageid="40001" startstoragevalue="1" endstoragevalue="2">
+        <mission name="Citizen Backpack" storageid="40001" startvalue="1" endvalue="2">
+            <missionstate id="1" description="Não tem problema, apenas me traga 100 chicken feathers 50 honeycombs e 1 legion helmet e eu as colocarei"/>
+            <missionstate id="2" description="Que maravilha, vejo que trouxe os itens que foi solicitado, como prometido irei lhe entregar os melhores addons já feito por mim, espero que goste!"/>
+        </mission>
+    </quest>
+
+
+	<quest name="(Addon) Druid Bear Paws" startstorageid="40002" startstoragevalue="1" endstoragevalue="2">
+        <mission name="Addon Druid 1" storageid="40002" startvalue="1" endvalue="2">
+            <missionstate id="1" description="Não tem problema, apenas me traga 50 patas de urso e 50 patas de lobo e eu as colocarei"/>
+            <missionstate id="2" description="Que maravilha, vejo que trouxe os itens que foi solicitado, como prometido irei lhe entregar os melhores addons já feito por mim, espero que goste!"/>
+        </mission>
+    </quest>
+
+
+	<quest name="(Addon) Sniper Gloves" startstorageid="40003" startstoragevalue="1" endstoragevalue="2">
+        <mission name="Sniper Gloves" storageid="40003" startvalue="1" endvalue="2">
+            <missionstate id="1" description="Não tem problema, apenas me traga 1 sniper gloves e eu as colocarei, mas não acho que você o encontrará nos próximos dois meses, hahaha."/>
+            <missionstate id="2" description="Que maravilha, vejo que trouxe os itens que foi solicitado, como prometido irei lhe entregar os melhores addons já feito por mim, espero que goste!"/>
+        </mission>
+    </quest>
+
+   <quest name="Treinamento" startstorageid="30035" startstoragevalue="1" endstoragevalue="10">
+        <mission name="Aquecimento" storageid="30035" startvalue="1" endvalue="4">
+            <missionstate id="1" description="Olá, aventureiro! Estou procurando por alguns Dark Cogumelos raros para meus experimentos alquímicos. Se você puder me trazer 10 deles, ficaria imensamente grato. Eles são encontrados nas aranhas da floresta. Para concluir fale 'hi' e 'yes' com o general "/>
+            <missionstate id="2" description="Olá novamente, herói! Estou precisando de algumas minhocas da terra para alimentar meus animais de estimação exóticos. Será que você pode conseguir 10 delas para mim? Geralmente, elas são encontradas nas terras úmidas nos esgotos. Para concluir fale 'hi' e 'yes' com o general"/>
+            <missionstate id="3" description="Ei, você! Estou com um desejo irresistível de morangos selvagens frescos. Se você puder reunir 10 dessas deliciosas frutas para mim, eu ficaria muito feliz. Você pode encontrá-los nas áreas arborizadas ao redor da cidade nos Ursos. Para concluir fale 'hi' e 'yes' com o general"/>
+            <missionstate id="4" description="Muito bem, está apto para o teste!"/>
+        </mission>
+        <mission name="Teste" storageid="30036" startvalue="4" endvalue="10">
+            <missionstate id="4" description="Muito bem, você alcançou o reconhecimento do General, agora mostre que é capaz, volte ao General e faça o Teste!"/>
+            <missionstate id="5" description="Ótimo, agora você deve estar na sala da Destinação, irá encontrar 4 salas nas quais tem os quatro grande guerreiros, escolha um mestre e siga sua jornada em busca do poder.!"/>
+            <missionstate id="6" description="Sorcerers(Magos) focam suas magias em destruição, como principal aprendizagem a magia negra, sua fonte de poder provém de sua mente, com isso, sua constituição e seu corpo são fracos. Ao teste... Seu teste é muito simples, até mesmo para um simples mortal! Meu centro de consulta foi tomado por uma maldição mística, preciso do livro contido em uma das bibliotecas, mas não será tão fácil, pois corpos amaldiçoados estão sedentos por carne fresca!"/>
+            <missionstate id="7" description="Knights(Cavaleiros) e a vocação que provém mais força, eles são fortes, resistentes, e sabem usar muito bem qualquer arma de 'melee' com máxima eficiência! Ao teste... Seu teste é muito simples, até mesmo para um simples mortal! Nossa sala de armamentos está infestada de ratos, quero que desinfete essas pragas"/>
+            <missionstate id="8" description="Druids(Druidas), sua força provém da elevação do espírito e o contato com os elementos, suas magias são focadas em cura e domínio de elementos, mas seu corpo e sua constituição são fracos. Ao teste... Seu teste consiste com o convívio na natureza e a paciência que isso nos traz. Meu jardim provém de frutos que a natureza pode nos oferecer, quero que traga para mim, 100 Blueberry colhidos na hora, e pacientemente"/>
+            <missionstate id="9" description="Archers(Arqueiros) são ágeis em 'melee' mas não provém de grande força, seu principal ataque e o combate a distância, mantém sua força física e mental equilibradas! Seu teste fará você usar a cabeça e sua agilidade!' Apenas treine um pouco sua mira, no baú a intermináveis spears para o seu treino, mais cuidado, você saberá presenciar o perigo!"/>
+            <missionstate id="10" description="Parabéns, agora você conseguiu obter sua vocação o jogo começa agora!"/>
+        </mission>
+    </quest>
+
+    <quest name="A Promoção" startstorageid="30038" startstoragevalue="1">
+        <mission name="O Resgate de sarina" storageid="30038" startvalue="1" endvalue="4" ignoreendvalue="true">
+            <missionstate id="1" description="Sarina foi capturada pelos orcs à noite passada,e à levou para um esconderijo.&#xA;Vá falar com Fartun, ele mora em um lugar localizado a leste daqui, antes da ponte dos goblins! Fale com ele sobre 'Lugar Orc', boa sorte!'" />
+            <missionstate id="2" description="Ontém a noite uma equipe de orc's passaram por fartun levando uma jovem e linda moça, que bate com as caracteristicas de da 'Srta.Sarina', siga pelo 'buraco' que fica aos redores de Fartun." />
+            <missionstate id="3" description="Como não conseguiu abrir a sela que sarina foi aprisionada, retorne a rainha e peça que a mesma envie a guarda real para que ela seja à salva." />
+            <missionstate id="4" description="Ótima Nobre! Conseguimos capturá-la e salvá-la com sucesso! Agora ela está em segurança, muito obrigada pela sua ajuda." />
+        </mission>
+    </quest>
+
+    <quest name="A História dos Antigos Alquimistas" startstorageid="30031" startstoragevalue="1">
+        <mission name="A" storageid="30031" startvalue="2" endvalue="2">
+            <missionstate id="2" description="Há muito tempo, em uma era esquecida pelos anais da história, os Alquimistas eram considerados os guardiães do equilíbrio entre o mundo natural e o sobrenatural. Suas habilidades eram tão vastas quanto os segredos que protegiam, e sua linguagem, uma forma de comunicação que transcendia as barreiras do tempo e da compreensão humana. Nos dias atuais, o mundo de Tibia se vê diante de uma ameaça iminente. Uma força antiga, adormecida por eras, começa a despertar, trazendo consigo o caos e a destruição. Os sábios e estudiosos, reconhecendo os sinais sombrios que se aproximam, sabem que a chave para conter essa ameaça reside nos segredos dos Alquimistas."/>
+        </mission>
+        <mission name="B" storageid="30031" startvalue="3" endvalue="3">
+            <missionstate id="3" description="ASDFGH."/>
+        </mission>
+        <mission name="C" storageid="30031" startvalue="4" endvalue="4">
+            <missionstate id="4" description="ASDFGH."/>
+        </mission>
+        <mission name="D" storageid="30031" startvalue="5" endvalue="5">
+            <missionstate id="5" description="ASDFGH."/>
+        </mission>
+        <mission name="E" storageid="30031" startvalue="6" endvalue="6">
+            <missionstate id="6" description="ASDFGH."/>
+        </mission>
+        <mission name="F" storageid="30031" startvalue="7" endvalue="7">
+            <missionstate id="7" description="ASDFGH."/>
+        </mission>
+    </quest>
+
+	<quest name="O Renascimento" startstorageid="30050" startstoragevalue="1">
+        <mission name="Mestre Orin" storageid="30050" startvalue="1" endvalue="2">
+            <missionstate id="1" description="Em um reino distante, no coração de uma floresta mágica, existia uma antiga torre. Dentro dela, vivia um sábio mago conhecido como Mestre Orin. Ele era guardião dos segredos da magia e dos mistérios do universo. A torre era um local sagrado, onde aqueles que buscavam sabedoria e poder vinham em busca de orientação. Um dia, um jovem aventureiro, chamado Aric, chegou à torre em busca de conhecimento. Ele estava determinado a se tornar mais forte e a dominar as artes da magia. Mestre Orin, com sua vasta sabedoria, percebeu o potencial latente dentro de Aric e concordou em treiná-lo. Anos se passaram, e Aric se tornou um feiticeiro habilidoso, dominando várias magias e enfrentando numerosos desafios. No entanto, ele começou a sentir que havia atingido um limite em seu crescimento. Ele se aproximou do Mestre Orin em busca de orientação mais uma vez. O sábio mago, após observar o progresso de Aric, percebeu que ele estava pronto para um novo estágio em sua jornada. Ele propôs um ritual de renascimento, onde Aric seria resetado para o nível 8, mas com um aumento significativo em sua vitalidade e a capacidade de desbloquear magias mais poderosas. Aric, mesmo que inicialmente hesitante, confiou na sabedoria do Mestre Orin e aceitou o desafio. Ele se preparou mentalmente para o ritual que mudaria o curso de sua jornada para sempre."/>
+            <missionstate id="2" description="Parabéns você encontrou o Mestre Orin, agora você obtem o conhecimento da Ressureição"/>
+        </mission>
+
+    </quest>
+
+
+
+    <quest name="Shima e Natalier" startstorageid="30033" startstoragevalue="1">
+        <mission name="Os Túmulos" storageid="30033" startvalue="1" endvalue="6">
+            <missionstate id="1" description="Há muitas eras atrás, na segunda Terra Média, Carlin sofreu, com certeza a guerra mais sangrenta já vista nesta região, os mortos-vivos fizeram uma aliança com os mestres do veneno, eles nos atacaram sem piedade, éramos excelentes lutadores, mas dois de nós lutaram com glória... Shima e Natalier, temidos até pelos mortos-vivos mais poderosos, mas não tenho tempo para contar toda a história, finalmente, vencemos esta guerra, mas tivemos perdas, Shima e Natalier caíram. Enterradas com eles, estão suas armas lendárias, feitas por Thordain. Sua tarefa é simples, encontrar os túmulos, eles estão localizados em Carlin."/>
+        </mission>
+    </quest>
+
+
+	<quest name="Deus" startstorageid="30039" startstoragevalue="1">
+        <mission name="O Conhecimento" storageid="30039" startvalue="1" endvalue="3" ignoreendvalue="true">
+            <missionstate id="1" description="após inúmeras aventuras e desafios, encontra-se diante do mestre dos mistérios, Arkalis, para compartilhar a extraordinária evolução de sua alma. Revelando como sua jornada o transformou, culminando em sua ascensão além das limitações da carne, o herói está pronto para abraçar seu destino como um deus recém-nascido. Antes, porém, ele deve buscar a orientação e sabedoria de Arkalis para enfrentar os desafios que aguardam os divinos. Assim, inicia-se uma nova fase da jornada, marcada por glória, iluminação e a promessa de um destino grandioso." />
+            <missionstate id="2" description="Consiga os seguintes itens:&#10;&#10;30-Magic Alchemist Fluid's&#10;40-Energy Stone&#10;20-Blood Herb" />
+            <missionstate id="3" description="Parabéns Você evoluiu sua alma para Deus." />
+          </mission>
+    </quest>
+
+
+	<quest name="Passagem" startstorageid="30040" startstoragevalue="1">
+        <mission name="Manutenção dos Trilhos" storageid="30040" startvalue="1" endvalue="2" ignoreendvalue="true">
+            <missionstate id="1" description= "Bem-vindo, aventureiro, à entrada da masmorra. Aqui, o caminho é marcado por trilhos quebrados e ecoa mistérios esquecidos há muito tempo. Para prosseguir, você deve demonstrar sua dedicação aos antigos guardiões trazendo consigo:&#10;&#10;- 5 Iron Bars (ferro forjado das profundezas da terra),&#10;- 50 Energy Stones (pedras de energia que brilham com poder místico),&#10;- 100 Black Pearls (pérolas negras, símbolos de beleza rara e sombria).&#10;&#10;Esses são os requisitos para obter o passaporte que permite desvendar os segredos ocultos que aguardam além desta entrada. Que os espíritos ancestrais guiem seu caminho nas profundezas de nossa masmorra." />
+            <missionstate id="2" description="Parabéns Você Conseguiu Seu Passaport, cuidado para não perde-lo ele é único e você não consiguirá mais fazer.&#10;&#10;Lembre-se que para entrar no castelo você precisará está com seu passaport em mãos." />
+          </mission>
+    </quest>
+
+
+
+</quests>

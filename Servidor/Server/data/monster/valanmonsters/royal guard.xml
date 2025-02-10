@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Royal Guard" nameDescription="a royal guard" race="blood" experience="1700" speed="224" manacost="450">
+  <health now="6400" max="6400"/>
+  <look type="134" head="4" body="124" legs="124" feet="115" corpse="3128"/>
+ <targetchange interval="2000" chance="15"/>
+  <strategy attack="100" defense="0"/>
+  <flags>
+    <flag summonable="0"/>
+    <flag attackable="1"/>
+    <flag hostile="1"/>
+    <flag illusionable="0"/>
+    <flag convinceable="1"/>
+    <flag pushable="0"/>
+    <flag canpushitems="1"/>
+    <flag staticattack="40"/>
+    <flag lightlevel="0"/>
+    <flag lightcolor="0"/>
+    <flag targetdistance="1"/>
+    <flag runonhealth="0"/>
+  </flags>
+<script>
+        <event name="criticalHitSystemHP"/>
+    </script>
+  <attacks>
+    <attack name="melee" interval="2000" min="-200" max="-400"/>
+    <attack name="throwing knife" interval="3500" chance="60" min="-150" max="-250"/>
+  </attacks>
+  <defenses armor="21" defense="23">
+  </defenses>
+  <immunities>
+      <immunity lifedrain="1"/>
+      <immunity paralyze="1"/>
+      <immunity invisible="1"/>
+    </immunities>
+  <voices interval="3000" chance="15">
+    <voice sentence="Invasors!"/>
+    <voice sentence="Taste my blade!"/>	
+  </voices>
+</monster>

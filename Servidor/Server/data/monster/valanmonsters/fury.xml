@@ -1,0 +1,61 @@
+<?xml version="1.0"?>
+<monster name="Fury" nameDescription="a Fury" race="fire" experience="4400" speed="350" manacost="0">
+  <health now="4100" max="4100"/>
+  <look type="149" head="94" body="77" legs="77" feet="0" addons="1" corpse="3065"/>
+  <targetchange interval="2000" chance="15"/>
+  <strategy attack="100" defense="0"/>
+  <flags>
+    <flag summonable="0"/>
+    <flag attackable="1"/>
+    <flag hostile="1"/>
+    <flag illusionable="0"/>
+    <flag convinceable="0"/>
+    <flag pushable="0"/>
+    <flag canpushitems="1"/>
+    <flag staticattack="80"/>
+    <flag lightlevel="0"/>
+    <flag lightcolor="0"/>
+    <flag targetdistance="1"/>
+    <flag runonhealth="0"/>
+  </flags>
+<script>
+        <event name="criticalHitSystemHP"/>
+    </script>
+<attacks>
+  <attack name="melee" interval="2000" min="-200" max="-500"/>
+  <attack name="great energy beam" interval="5300" min="-350" max="-700" chance="35"/>
+  <attack name="throwing star" interval="3500" min="-100" max="-200" chance="65"/>
+  <attack name="frost exori bomb" interval="4500" min="-150" max="-300" chance="45"/>
+  <attack name="frost smokewave" interval="7000" min="-150" max="-300" chance="70"/>
+</attacks>
+  <defenses armor="15" defense="16"/>
+  <immunities>
+      <immunity lifedrain="1"/>
+      <immunity paralyze="1"/>
+      <immunity invisible="1"/>
+    </immunities>
+  <voices interval="2000" chance="10">
+    <voice sentence="Ahhhhrrrr!"/>
+    <voice sentence="Waaaaah!"/>
+    <voice sentence="Carnage!"/>
+  </voices>
+  <loot>
+   <item id="2148" countmax="100" chance1="100000" chancemax="0"/>
+   <item id="2152" countmax="5" chance1="70000" chancemax="0"/>
+   <item id="2645" chance="1200"/>
+   <item id="14999" countmax="1" chance1="1555" chancemax="0"/>
+   <item id="2666" countmax="1" chance1="25000" chancemax="0"/>
+   <item id="6500" countmax="1" chance1="1500" chancemax="0"/>
+   <item id="5944" chance="1500"/>
+   <item id="1987" chance="100000">
+  <inside>
+   <item id="2487" chance="1000"/>
+   <item id="2487" chance="2550"/>
+   <item id="2181" chance="7777"/>
+   <item id="2143" countmax="1" chance1="12000" chancemax="0"/>
+   <item id="2156" chance="1900"/>
+   <item id="5911" chance="1800"/>
+  </inside>
+  </item>
+</loot>
+</monster>

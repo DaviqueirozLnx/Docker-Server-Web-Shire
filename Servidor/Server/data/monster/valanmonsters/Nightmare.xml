@@ -1,0 +1,70 @@
+<?xml version="1.0"?>
+<monster name="Nightmare" nameDescription="a nightmare" race="blood" experience="2250" speed="300" manacost="0">
+	<health now="2700" max="2700"/>
+	<look type="245" head="20" body="30" legs="40" feet="50" corpse="6341"/>
+  <targetchange interval="2000" chance="10"/>
+  <strategy attack="100" defense="0"/>
+  <flags>
+    <flag summonable="0"/>
+    <flag attackable="1"/>
+    <flag hostile="1"/>
+    <flag illusionable="0"/>
+    <flag convinceable="0"/>
+    <flag pushable="0"/>
+    <flag canpushitems="1"/>
+    <flag staticattack="70"/>
+    <flag lightlevel="0"/>
+    <flag lightcolor="0"/>
+    <flag targetdistance="1"/>
+    <flag runonhealth="500"/>
+  </flags>
+<script>
+        <event name="criticalHitSystemHP"/>
+    </script>
+  <attacks>
+    <attack name="melee" interval="2000" min="-70" max="-150"/>
+    <attack name="heavy magic missile" interval="1500" chance="40" min="-140" max="-170"/>
+    <attack name="poison gfb" interval="4500" chance="30" min="-250" max="-400"/>
+  </attacks>
+  <defenses armor="33" defense="35">
+    <defense name="Ultimate Healing" interval="2500" chance="30" min="100" max="250"/>
+    <defense name="haste" interval="5500" chance="40" min="100" max="250"/>
+  </defenses>
+  <immunities>
+      <immunity lifedrain="1"/>
+      <immunity paralyze="1"/>
+      <immunity invisible="1"/>
+    </immunities>
+  <voices interval="2000" chance="5">
+    <voice sentence="Close your eyes... I want to show you something."/>
+    <voice sentence="I will haunt you forever!"/>
+    <voice sentence="Pffffrrrrrrrrrr."/>
+    <voice sentence="I will make you scream."/>
+    <voice sentence="Take a ride with me."/>
+    <voice sentence="Weeeheeheeheehe."/>
+  </voices>
+  <loot>
+    <item id="2148" countmax="100" chance1="100000" chancemax="0"/>
+    <item id="2148" countmax="50" chance1="7000" chancemax="0"/>
+    <item id="2152" countmax="3" chance1="70000" chancemax="0"/>
+    <item id="2666" countmax="2" chance1="40000" chancemax="0"/>
+    <item id="2547" countmax="3" chance1="5000" chancemax="0"/>
+    <item id="2671" countmax="3" chance1="10000" chancemax="0"/>
+    <item id="2237" chance="50000"/>
+    <item id="2230" chance="10000"/>
+    <item id="2457" chance="7500"/>
+    <item id="14999" chance="2000"/>
+    <item id="6500" chance="2000"/>
+    <item id="2195" chance="3000"/>
+    <item id="1987" chance="100000">
+        <inside>
+           <item id="6300" chance="2000"/>
+           <item id="7419" chance="2500"/>
+           <item id="2477" chance="4000"/>
+           <item id="2387" chance="8000"/>
+           <item id="2532" chance="8000"/>
+           <item id="5944" chance="2000"/>
+        </inside>
+     </item>
+  </loot>
+</monster>

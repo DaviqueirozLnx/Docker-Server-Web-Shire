@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Faded Ghost" nameDescription="a faded ghost" race="undead" experience="10000" speed="290" manacost="0">
+	<health now="11500" max="11500"/>
+    <look type="436" head="96" body="97" legs="96" feet="97" addons="3" corpse="3128"/>
+	<targetchange interval="2000" chance="15"/>
+	<targetstrategies nearest="70" health="10" damage="10" random="10"/>
+	<flags>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag summonable="0"/>
+		<flag convinceable="0"/>
+		<flag illusionable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="70"/>
+		<flag runonhealth="0"/>
+	</flags>
+<script>
+        <event name="criticalHitSystemHP"/>
+    </script>
+	<attacks>
+			<attack name="melee" interval="2000" min="-200" max="-300"/>
+			<attack name="berserk monsters" interval="2500" chance="20" min="-300" max="-400"/>
+			<attack name="physical" interval="3000" chance="25" range="1" min="-350" max="-400">
+				<attribute key="areaEffect" value="stun"/>
+			</attack>
+			<attack name="sd monsters"  interval="5000" chance="70" range="7" min="-500" max="-700"/>
+	</attacks>
+	<defenses armor="27" defense="159">
+		<defense name="haste" chance="70" interval="5000">
+		</defense>
+	</defenses>
+	<elements>
+	</elements>
+	<immunities>
+		<immunity lifedrain="1"/>
+		<immunity paralyze="1"/>
+		<immunity invisible="1"/>
+	</immunities>
+	<voices interval="1000" chance="5">
+		<voice sentence="You will succumb on my darkness." yell="1"/>
+		<voice sentence="You're gonna come a lost soul just like me! Hahahahaha!" yell="1"/>
+	</voices>
+    <loot>
+		<item id="2152" countmax="30" chance1="100000" chancemax="0"/>
+		<item id="2229" chance="10000"/>
+        <item id="2230" chance="10000"/>
+		<item id="1987" chance="1500">
+		  <inside>
+			<item id="5903" chance="1500"/>
+			<item id="2656" chance="1500"/>
+			<item id="2453" chance="1500"/>
+			<item id="5803" chance="1500"/>
+			<item id="7405" chance="1500"/>
+			<item id="2195" chance="1500"/>
+		  </inside>
+		</item>
+	  </loot>
+</monster>

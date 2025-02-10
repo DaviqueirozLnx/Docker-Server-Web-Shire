@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Chef Bandit" nameDescription="a chef bandit" race="blood" experience="140" speed="180" manacost="0">
+  <health now="245" max="245"/>
+  <look type="129" head="58" body="114" legs="114" feet="114" corpse="3128"/>
+  <targetchange interval="2000" chance="5"/>
+  <strategy attack="100" defense="0"/>
+  <flags>
+    <flag summonable="0"/>
+    <flag attackable="1"/>
+    <flag hostile="1"/>
+    <flag illusionable="0"/>
+    <flag convinceable="0"/>
+    <flag pushable="0"/>
+    <flag canpushitems="1"/>
+    <flag staticattack="50"/>
+    <flag lightlevel="0"/>
+    <flag lightcolor="0"/>
+    <flag targetdistance="1"/>
+    <flag runonhealth="55"/>
+  </flags>
+<script>
+        <event name="criticalHitSystemHP"/>
+    </script>
+  <attacks>
+    <attack name="melee" interval="2000" min="-40" max="-110"/>
+  </attacks>
+  <defenses armor="17" defense="18"/>
+  <immunities>
+    <immunity physical="0"/>
+    <immunity energy="0"/>
+    <immunity fire="0"/>
+    <immunity poison="0"/>
+    <immunity lifedrain="0"/>
+    <immunity paralyze="0"/>
+    <immunity outfit="0"/>
+    <immunity drunk="0"/>
+    <immunity invisible="0"/>
+  </immunities>
+  <voices interval="2000" chance="5">
+    <voice sentence="Wanna die?!"/>
+  </voices>
+      <loot>
+       	<item id="2148" countmax="50" chance1="100000" chancemax="0"/>
+       	<item id="2666" countmax="4" chance1="20000" chancemax="0"/>
+      
+       	<item id="1987" chance="100000">
+       	<inside>
+      	<item id="2465" chance="6000"/>
+       	<item id="2458" chance="8000"/>
+       	<item id="2649" chance="10000"/>
+       	<item id="2398" chance="7000"/>
+       	<item id="2391" chance="999"/>
+                 </inside>
+       	</item>
+      </loot>
+</monster>

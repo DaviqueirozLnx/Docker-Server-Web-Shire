@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Ice Witch" nameDescription="an ice witch" race="blood" experience="580" speed="188" manacost="0">
+  <health now="540" max="540"/>
+  <look type="149" head="0" body="47" legs="105" feet="105" addons="0" corpse="3065"/>
+ <targetchange interval="2000" chance="15"/>
+  <strategy attack="100" defense="0"/>
+  <flags>
+    <flag summonable="0"/>
+    <flag attackable="1"/>
+    <flag hostile="1"/>
+    <flag illusionable="1"/>
+    <flag convinceable="0"/>
+    <flag pushable="0"/>
+    <flag canpushitems="1"/>
+    <flag staticattack="60"/>
+    <flag lightlevel="0"/>
+    <flag lightcolor="0"/>
+    <flag targetdistance="5"/>
+    <flag runonhealth="0"/>
+  </flags>
+<script>
+        <event name="criticalHitSystemHP"/>
+    </script>
+  <attacks>
+    <attack name="outfit" interval="1000" chance="10" range="7" item="7171" duration="6500">
+       <attribute key="areaEffect" value="blueshimmer"/>
+     </attack>
+    <attack name="snowball" interval="1000" chance="40" min="-60" max="-100"/>
+    <attack name="frost smokewave" interval="3700" chance="65" min="-50" max="-100"/>
+    <attack name="paralyze" interval="3500" chance="65"/>
+  </attacks>
+  <defenses armor="30" defense="32">
+    <defense name="light healing" interval="2500" chance="60" min="65" max="95"/>
+  </defenses>
+  <immunities>
+      <immunity lifedrain="1"/>
+      <immunity paralyze="1"/>
+      <immunity invisible="1"/>
+    </immunities>
+  <voices interval="2000" chance="5">
+    <voice sentence="So you think you are cool?"/>
+    <voice sentence="I hope it is not too cold for you! HeHeHe."/>
+    <voice sentence="Freeze!"/>
+  </voices>
+  <loot>
+    <item id="2148" countmax="80" chance1="100000" chancemax="0"/>
+    <item id="2436" chance="1222"/>
+    <item id="7449" chance="1222"/>
+    <item id="7441" chance="1500"/>
+    <item id="7387" chance="1444"/>
+    <item id="7290" chance="1000"/>
+    <item id="1987" chance="100000">
+      <inside>
+        <item id="2195" chance="1444"/>
+        <item id="2423" chance="3999"/>
+        <item id="2796" countmax="3" chance1="9999" chancemax="0"/>
+        <item id="2663" chance="5111"/>
+        <item id="7459" chance="500"/>
+      </inside>
+    </item>
+  </loot>
+</monster>

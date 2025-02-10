@@ -1,0 +1,4 @@
+<npc name="Mentor Sez'ar" script="Rook/msorc.lua"  walkinterval="0"  >
+	<health now="150" max="150"/>
+	<look type="130" head="19" body="114" legs="95" feet="94" addons="3" corpse="3128"/>
+</npc>

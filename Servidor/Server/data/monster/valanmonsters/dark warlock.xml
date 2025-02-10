@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Dark Warlock" nameDescription="a Dark Warlock" race="blood" experience="15500" speed="520" manacost="0">
+  <health now="9600" max="9600"/>
+  <look type="130" head="0" body="114" legs="114" feet="114" corpse="3129"/>
+  <targetchange interval="2000" chance="15"/>
+  <strategy attack="100" defense="0"/>
+  <flags>
+    <flag summonable="0"/>
+    <flag attackable="1"/>
+    <flag hostile="1"/>
+    <flag illusionable="0"/>
+    <flag convinceable="0"/>
+    <flag pushable="0"/>
+    <flag canpushitems="1"/>
+    <flag staticattack="40"/>
+    <flag lightlevel="0"/>
+    <flag lightcolor="0"/>
+    <flag targetdistance="5"/>
+    <flag runonhealth="2100"/>
+  </flags>
+<script>
+        <event name="criticalHitSystemHP"/>
+    </script>
+  <attacks>
+    <attack name="melee" interval="2000" min="-150" max="-300"/>
+    <attack name="sptwand" interval="1200" chance="50" min="-300" max="-450"/>
+    <attack name="sd monsters" interval="3500" chance="10" min="-550" max="-650"/>
+    <attack name="Great Energy Beam" interval="5500" chance="30" min="-450" max="-650"/>
+	<attack name="paralyze" interval="5000" chance="40" min="-120" max="-320"/>
+  </attacks>
+  <defenses armor="20" defense="25">
+    <defense name="Invisible" interval="6000" chance="25"/>
+    <defense name="Ultimate Healing" interval="5000" chance="15" min="250" max="500"/>
+  </defenses>
+  <immunities>
+      <immunity lifedrain="1"/>
+      <immunity paralyze="1"/>
+      <immunity invisible="1"/>
+    </immunities>
+    <summons maxSummons="2">
+      <summon name="Warlock" interval="6000" chance="30"/>
+    </summons>
+  <loot>
+    <item id="2148" countmax="100" chance1="100000" chancemax="0"/>
+    <item id="2600" chance="10000"/>
+    <item id="1987" chance="100000">
+      <inside>
+        <item id="2148" countmax="50" chance1="80000" chancemax="0"/>
+        <item id="2411" chance="5000"/>
+        <item id="2792" countmax="5" chance1="6666" chancemax="0"/>
+        <item id="2793" countmax="2" chance1="6666" chancemax="0"/>
+        <item id="1984" chance="2500"/>
+        <item id="2656" chance="1333"/>
+        <item id="2466" chance="800"/>
+        <item id="2436" chance="1428"/>
+        <item id="2123" chance="1000"/>
+      </inside>
+    </item>
+  </loot>
+</monster>

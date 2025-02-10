@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mounts>
+	<mount id="1" clientid="551" name="Widow Queen" speed="20" premium="yes" />
+	<mount id="2" clientid="552" name="Racing Bird" speed="20" premium="yes" />
+	<mount id="3" clientid="553" name="War Bear" speed="20" premium="yes" />
+	<mount id="5" clientid="554" name="Midnight Panther" speed="20" premium="yes" />
+	<mount id="6" clientid="555" name="Draptor" speed="20" premium="yes" />
+	<mount id="7" clientid="556" name="Titanica" speed="20" premium="yes" />
+	<mount id="8" clientid="557" name="Tin Lizzard" speed="20" premium="yes" />
+	<mount id="9" clientid="558" name="Blazebringer" speed="20" premium="yes" />
+	<mount id="10" clientid="559" name="Rapid Boar" speed="20" premium="yes" />
+	<mount id="11" clientid="560" name="Stampor" speed="20" premium="yes" />
+	<mount id="12" clientid="561" name="Undead Cavebear" speed="20" premium="yes" />
+	<mount id="13" clientid="568" name="Donkey" speed="20" premium="yes" />
+	<mount id="14" clientid="569" name="Tiger Slug" speed="20" premium="yes" />
+	<mount id="15" clientid="570" name="Crystal Wolf" speed="20" premium="yes" />
+	<mount id="17" clientid="572" name="War Horse" speed="20" premium="yes" />
+	<mount id="18" clientid="579" name="Kingly Deer" speed="20" premium="yes" />
+	<mount id="19" clientid="580" name="Tamed Panda" speed="20" premium="yes" />
+	<mount id="20" clientid="582" name="Dromedary" speed="20" premium="yes" />
+	<mount id="21" clientid="584" name="Scorpion King" speed="20" premium="yes" />
+	<mount id="22" clientid="587" name="Rented Horse" speed="20" premium="no" />
+	<mount id="23" clientid="588" name="Armoured War Horse" speed="20" premium="no" />
+	<mount id="24" clientid="589" name="Shadow Draptor" speed="20" premium="yes" />
+	<mount id="27" clientid="610" name="Ironblight" speed="20" premium="yes" />
+	<mount id="28" clientid="611" name="Magma Crawler" speed="20" premium="yes" />
+	<mount id="29" clientid="613" name="Azudocus" speed="20" premium="yes" />
+	<mount id="30" clientid="620" name="Gnarlhound" speed="20" premium="yes" />
+</mounts>

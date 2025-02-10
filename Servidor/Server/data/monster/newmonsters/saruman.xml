@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Saruman" nameDescription="a saruman" race="blood" experience="800000" speed="430" manacost="0" skull="black">
+	<health now="1500000" max="1500000"/>
+    <look type="130" head="0" body="0" legs="0" feet="0" addons="3" corpse="3129"/>
+	<targetchange interval="2000" chance="15"/>
+	<targetstrategies nearest="70" health="10" damage="10" random="10"/>
+	<flags>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag summonable="0"/>
+		<flag convinceable="0"/>
+		<flag illusionable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="5"/>
+		<flag staticattack="70"/>
+		<flag runonhealth="0"/>
+	</flags>
+<script>
+        <event name="criticalHitSystemHP"/>
+    </script>
+	<attacks>
+      <attack name="melee" interval="2000" min="-80" max="-100"/>
+      <attack name="sptwand" interval="2000" chance="100" min="-7500" max="-9000"/>
+      <attack name="sptwand" interval="2500" chance="10" min="-9000" max="-11500"/>
+      <attack name="fe explosion" interval="2500" chance="40" min="-4000" max="-4600"/>
+      <attack name="sd monsters" interval="3000" chance="30" min="-5000" max="-5500"/>
+	  <attack name="Great Energy Beam" interval="5500" chance="30" min="-7000" max="-9000"/>
+	  <attack name="paralyze" interval="7000" chance="40" min="-10" max="-30"/>
+	  <attack name="grown trap" interval="9000" chance="35"/>
+	  <attack name="silence rune" interval="4000" chance="20"/>
+	</attacks>
+	<defenses armor="27" defense="159">
+		<defense name="healing" interval="13000" chance="30" min="25000" max="35000">
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</defense>
+		<defense name="invisible" interval="10000" chance="20" duration="15000">
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</defense>
+		<defense name="haste" chance="40" interval="10000">
+		</defense>
+                <defense name="remove wall" chance="100" interval="1000">
+		</defense>
+	</defenses>
+	<elements>
+	</elements>
+	<immunities>
+		<immunity lifedrain="1"/>
+		<immunity paralyze="1"/>
+		<immunity invisible="1"/>
+	</immunities>
+     <summons maxSummons="3">
+      <summon name="Uruk-Hai" interval="6000" chance="40"/>
+    </summons>
+	<voices interval="1000" chance="5">
+		<voice sentence="I AM THE LORD SARUMAN!" yell="1"/>
+		<voice sentence="My spirit increase to fight!!!" yell="1"/>
+	</voices>
+    <loot>
+          <item id="13685" countmax="3" chance1="100000" chancemax="0"/>
+          <item id="13520" chance="400"/>
+          <item id="13551" chance="400"/>
+          <item id="13588" chance="400"/>
+          <item id="3940" chance="1500">
+        <inside>
+          <item id="13593" chance="500"/>
+		  <item id="13562" chance="2000"/>
+          <item id="13603" chance="500"/>
+		  <item id="13561" chance="2000"/>
+          <item id="13557" chance="500"/>
+          <item id="13523" chance="500"/>
+	  <item id="2138" chance="1500"/>
+        </inside>
+      </item>
+    </loot>
+</monster>

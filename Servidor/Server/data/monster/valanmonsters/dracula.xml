@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Dracula" nameDescription="a dracula" race="undead" experience="8000" speed="324" manacost="0">
+  <health now="6500" max="6500"/>
+  <look type="133" head="95" body="114" legs="114" feet="113" addons="2" corpse="3128"/>
+  <targetchange interval="2000" chance="15"/>
+  <strategy attack="100" defense="0"/>
+  <flags>
+    <flag summonable="0"/>
+    <flag attackable="1"/>
+    <flag hostile="1"/>
+    <flag illusionable="0"/>
+    <flag convinceable="0"/>
+    <flag pushable="0"/>
+    <flag canpushitems="1"/>
+    <flag staticattack="80"/>
+    <flag lightlevel="0"/>
+    <flag lightcolor="0"/>
+    <flag targetdistance="1"/>
+    <flag runonhealth="0"/>
+  </flags>
+  <attacks>
+    <attack name="melee" interval="2000" min="-250" max="-480"/>
+	<attack name="emorragia" range="1" interval="2500" chance="20" min="-500" max="-1000"/>
+	<attack name="life drain" range="1" interval="4200" chance="35" min="-300" max="-500"/>
+	<attack name="paralyze" interval="3500" chance="40" min="-50" max="-100"/>
+  </attacks>
+  <defenses armor="21" defense="23">
+    <defense name="Ultimate Healing" interval="15000" chance="10" min="6500" max="6500"/>
+  </defenses>
+  <immunities>
+    <immunity physical="0"/>
+    <immunity energy="0"/>
+    <immunity fire="0"/>
+    <immunity poison="0"/>
+    <immunity lifedrain="1"/>
+    <immunity paralyze="1"/>
+    <immunity outfit="1"/>
+    <immunity drunk="1"/>
+    <immunity invisible="1"/>
+  </immunities>
+  <voices interval="3000" chance="15">
+    <voice sentence="I want blood!"/>
+    <voice sentence="Come to my side!"/>
+    <voice sentence="Flesh blood!"/>
+  </voices>
+    <summons maxSummons="5">
+      <summon name="Vampire" interval="3500" chance="25"/>
+    </summons>
+        <loot>
+       	<item id="2399" countmax="14" chance1="5200" chancemax="1000"/>
+       	<item id="2145" countmax="2" chance1="1600" chancemax="1000"/>
+       	<item id="2148" countmax="40" chance1="100000" chancemax="0"/>
+
+       	<item id="1987" chance="100000">
+       	<inside>
+       	<item id="2050" chance="45000"/>
+       	<item id="2404" chance="25000"/>
+		<item id="2510" chance="40000"/>
+       	<item id="2403" chance="25000"/>
+      	<item id="2457" chance="8000"/>
+       	<item id="3968" chance="1000"/>
+       	<item id="3969" chance="3333"/>
+       	</inside>
+       	</item>
+      </loot>
+</monster>

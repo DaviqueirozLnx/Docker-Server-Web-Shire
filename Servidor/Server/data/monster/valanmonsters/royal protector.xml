@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Royal Protector" nameDescription="a royal protector" race="blood" experience="3500" speed="310" manacost="0">
+  <health now="5200" max="5200"/>
+  <look type="130" head="39" body="105" legs="86" feet="96" corpse="3128"/>
+ <targetchange interval="2000" chance="15"/>
+  <strategy attack="100" defense="0"/>
+  <flags>
+    <flag summonable="0"/>
+    <flag attackable="1"/>
+    <flag hostile="1"/>
+    <flag illusionable="0"/>
+    <flag convinceable="0"/>
+    <flag pushable="0"/>
+    <flag canpushitems="1"/>
+    <flag staticattack="60"/>
+    <flag lightlevel="0"/>
+    <flag lightcolor="0"/>
+    <flag targetdistance="4"/>
+    <flag runonhealth="0"/>
+  </flags>
+<script>
+        <event name="criticalHitSystemHP"/>
+    </script>
+  <attacks>
+    <attack name="melee" interval="2000" min="-50" max="-80"/>
+    <attack name="gfb energy" interval="1000" chance="80" min="-200" max="-300"/>
+  </attacks>
+  <defenses armor="21" defense="23">
+  </defenses>
+  <immunities>
+      <immunity lifedrain="1"/>
+      <immunity paralyze="1"/>
+      <immunity invisible="1"/>
+    </immunities>
+  <voices interval="3000" chance="10">
+    <voice sentence="Feel my energy!"/>	
+  </voices>
+  <loot>
+    <item id="4851" chance="100000"/>
+  </loot>
+</monster>

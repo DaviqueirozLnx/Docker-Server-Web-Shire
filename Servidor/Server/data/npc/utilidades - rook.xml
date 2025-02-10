@@ -1,0 +1,4 @@
+<?xml version="1.0"?>
+<npc name="Seller" script="Rook/tools.lua" access="3"  walkinterval="0" lookdir="1">
+ 	<look type="128" head="20" body="30" legs="40" feet="50"/>
+</npc>

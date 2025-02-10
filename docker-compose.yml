@@ -1,0 +1,50 @@
+version: '3'
+services:
+  mariadb:
+    image: mariadb:latest
+    container_name: mariadb
+    environment:  
+      MYSQL_ROOT_PASSWORD: rootpassword  # Defina uma senha para o root
+      MYSQL_DATABASE: mydatabase         # Nome do banco de dados a ser criado
+      MYSQL_USER: user                   # Nome de um usuário adicional
+      MYSQL_PASSWORD: userpassword       # Senha para o usuário adicional
+    ports:
+      - "3306:3306"  # Mapeia a porta do contêiner para a porta local
+    volumes:
+      - ./BancoDeDados/my.cnf:/etc/mysql/my.cnf
+      - mariadb_data:/var/lib/mysql      # Persistência de dados
+    networks:
+      - shirelegendslan
+    restart: always
+
+  servidor:
+    build:
+      context: ./Servidor
+    ports:
+      - "7171:7171"
+      - "7172:7172"
+    container_name: ShireLegendsServer
+    networks:
+      - shirelegendslan
+    depends_on:
+      - mariadb  # Garante que o MariaDB inicie antes do servidor
+    entrypoint: ["sh", "-c", "sleep 30 && exec /bin/tfs"]  # Aguarda 30 segundos para garantir que o banco de dados esteja pronto
+
+  web:
+    build: 
+      context: ./web
+    ports:
+      - "80:80"
+    container_name: ShireLegends-web
+    volumes:
+      - ./web/default.conf:/etc/nginx/sites-available/default
+    networks:
+      - shirelegendslan
+      
+volumes:
+  mariadb_data:  # Persistência de dados do MariaDB
+
+networks:
+  shirelegendslan:
+    driver: bridge
+ 

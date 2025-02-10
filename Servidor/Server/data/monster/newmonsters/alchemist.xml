@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Alchemist" nameDescription="a alchemist" race="blood" experience="50000" speed="290" manacost="0">
+	<health now="150000" max="150000"/>
+    <look type="133" head="96" body="0" legs="114" feet="96" addons="3" corpse="3128"/>
+	<targetchange interval="2000" chance="15"/>
+	<targetstrategies nearest="70" health="10" damage="10" random="10"/>
+	<flags>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag summonable="0"/>
+		<flag convinceable="0"/>
+		<flag illusionable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="3"/>
+		<flag staticattack="70"/>
+		<flag runonhealth="0"/>
+	</flags>
+<script>
+        <event name="criticalHitSystemHP"/>
+    </script>
+	<attacks>
+			<attack name="melee" interval="2000" min="-1500" max="-2500"/>
+			<attack name="paralyze" interval="5500" chance="30" range="7" min="-30" max="-30"/>
+			<attack name="sd monsters"  interval="6600" chance="70" range="7" min="-1500" max="-2500"/>
+            <attack name="fe explosion" interval="2400" chance="80" min="-500" max="-1500"/>
+	</attacks>
+	<defenses armor="27" defense="159">
+		<defense name="healing" interval="13000" chance="30" min="2500" max="5000">
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</defense>
+		<defense name="invisible" interval="10000" chance="20" duration="15000">
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</defense>
+		<defense name="haste" chance="40" interval="10000">
+		</defense>
+	</defenses>
+	<elements>
+	</elements>
+	<immunities>
+		<immunity lifedrain="1"/>
+		<immunity paralyze="1"/>
+		<immunity invisible="1"/>
+	</immunities>
+	<voices interval="1000" chance="5">
+		<voice sentence="Ops! Im thinking!" yell="1"/>
+		<voice sentence="I found it!" yell="1"/>
+	</voices>
+        <loot>
+       	<item id="2160" countmax="10" chance1="100000" chancemax="0"/>
+       	<item id="2789" countmax="10" chance1="60000" chancemax="0"/>
+       	<item id="2788" chance="1000"/>
+	  <item id="14990" chance="1500"/>
+      <item id="2421" chance="500"/>
+          <item id="2408" chance="500"/>
+          <item id="2415" chance="500"/>
+          <item id="2523" chance="500"/>
+        <item id="2443" chance="500"/>
+        <item id="2444" chance="500"/>
+       	<item id="3939" chance="1500">
+       	<inside>
+       	<item id="7390" chance="1500"/>
+       	<item id="13531" chance="1500"/>
+       	<item id="7405" chance="1500"/>
+       	<item id="13552" chance="1500"/>
+       	<item id="13591" chance="1500"/>
+		<item id="7426" chance="1500"/>
+       	</inside>
+       	</item>
+      </loot>
+</monster>

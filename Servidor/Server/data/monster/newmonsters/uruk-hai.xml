@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Uruk-Hai" nameDescription="an uruk-hai" race="blood" experience="100000" speed="340" manacost="0">
+	<health now="135000" max="135000"/>
+	<look type="2" head="20" body="30" legs="40" feet="50" corpse="2967"/>
+	<targetchange interval="2000" chance="15"/>
+	<targetstrategies nearest="70" health="10" damage="10" random="10"/>
+	<flags>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag summonable="0"/>
+		<flag convinceable="0"/>
+		<flag illusionable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="50"/>
+		<flag runonhealth="0"/>
+	</flags>
+<script>
+        <event name="criticalHitSystemHP"/>
+    </script>
+	<attacks>
+		<attack name="melee" interval="2000" min="-1400" max="-1500"/>
+        <attack name="spear" interval="5000" chance="75" min="-1000" max="-1500"/>
+	</attacks>
+	<defenses armor="27" defense="159">
+	</defenses>
+	<elements>
+		<element earthPercent="0"/>
+	</elements>
+	<immunities>
+		<immunity lifedrain="1"/>
+		<immunity paralyze="1"/>
+		<immunity invisible="1"/>
+	</immunities>
+	<voices interval="1000" chance="5">
+		<voice sentence="Renat Ulderek!" yell="1"/>
+		<voice sentence="Ikem Rambo Zambo!!" yell="1"/>
+	</voices>
+    <loot>
+      <item id="2160" countmax="4" chance1="100000" chancemax="0"/>
+      <item id="2219" chance="1500"/>
+      <item id="2220" chance="1510"/>
+      <item id="2221" chance="1520"/>
+      <item id="2222" chance="1530"/>
+      <item id="2223" chance="1540"/>
+      <item id="2224" chance="1550"/>
+      <item id="2226" chance="1560"/>
+      <item id="2227" chance="1570"/>
+      <item id="2228" chance="1580"/>
+      <item id="2229" chance="1590"/>
+      <item id="1996" chance="1500">
+        <inside>
+          <item id="2390" chance="1500"/> 
+          <item id="2415" chance="1500"/> 
+          <item id="2421" chance="1500"/>
+          <item id="7392" chance="1500"/> 
+          <item id="13509" chance="1500"/> 
+          <item id="13519" chance="1500"/> 
+          <item id="2496" chance="1500"/> 
+          <item id="13579" chance="1500"/> 
+        </inside>
+      </item>
+    </loot>
+</monster>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Fire Spirit" nameDescription="a fire spirit" race="fire" experience="1700" speed="190" manacost="0">
+  <health now="1000" max="1000"/>
+  <look type="49" head="20" body="30" legs="40" feet="50" corpse="1492"/>
+  <targetchange interval="2000" chance="10"/>
+  <strategy attack="100" defense="0"/>
+  <flags>
+    <flag summonable="0"/>
+    <flag attackable="1"/>
+    <flag hostile="1"/>
+    <flag illusionable="0"/>
+    <flag convinceable="0"/>
+    <flag pushable="0"/>
+    <flag canpushitems="1"/>
+    <flag staticattack="70"/>
+    <flag lightlevel="3"/>
+    <flag lightcolor="199"/>
+    <flag targetdistance="2"/>
+    <flag runonhealth="0"/>
+  </flags>
+<script>
+        <event name="criticalHitSystemHP"/>
+    </script>
+  <attacks>
+    <attack name="melee" interval="2000" min="-100" max="-150"/>
+    <attack name="fe explosion" interval="2500" chance="45" min="-110" max="-350"/>
+    <attack name="dragon fireball" interval="4500" chance="40" min="-170" max="-225"/>
+  </attacks>
+  <defenses armor="5" defense="5"/>
+  <immunities>
+      <immunity lifedrain="1"/>
+      <immunity paralyze="1"/>
+      <immunity invisible="1"/>
+    </immunities>
+</monster>

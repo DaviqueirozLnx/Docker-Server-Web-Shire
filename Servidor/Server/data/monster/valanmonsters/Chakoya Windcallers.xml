@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Chakoya Windcaller" nameDescription="a chakoya windcaller" race="blood" experience="48" speed="205" manacost="305">
+  <health now="84" max="84"/>
+  <look type="260" head="20" body="30" legs="40" feet="50" corpse="7324"/>
+ <targetchange interval="2000" chance="15"/>
+  <strategy attack="100" defense="0"/>
+  <flags>
+    <flag summonable="0"/>
+    <flag attackable="1"/>
+    <flag hostile="1"/>
+    <flag illusionable="1"/>
+    <flag convinceable="1"/>
+    <flag pushable="0"/>
+    <flag canpushitems="1"/>
+    <flag staticattack="80"/>
+    <flag lightlevel="0"/>
+    <flag lightcolor="0"/>
+    <flag targetdistance="4"/>
+    <flag runonhealth="0"/>
+  </flags>
+<script>
+        <event name="criticalHitSystemHP"/>
+    </script>
+  <attacks>
+    <attack name="heavy magic missile" interval="1500" chance="25" min="-15" max="-35"/>
+  </attacks>
+  <defenses armor="12" defense="13"/>
+  <immunities>
+      <immunity lifedrain="1"/>
+      <immunity paralyze="1"/>
+      <immunity invisible="1"/>
+    </immunities>
+  <voices interval="2000" chance="5">
+    <voice sentence="Chikuva!"/>
+    <voice sentence="Siqsiq ji jusipa!"/>
+    <voice sentence="Jagura taluka taqua!"/>
+  </voices>
+  <loot>
+    <item id="2148" countmax="24" chance1="100000" chancemax="0"/>
+    <item id="2671" countmax="1" chance1="35000" chancemax="0"/>
+           <item id="2667" countmax="3" chance1="48000" chancemax="0"/>
+    <item id="7159" countmax="1" chance1="2000" chancemax="0"/>
+    <item id="7158" countmax="1" chance1="2000" chancemax="0"/>
+    <item id="2669" countmax="1" chance1="2000" chancemax="0"/>
+    <item id="7441" chance="1000"/>
+    <item id="7290" chance="500"/>
+    <item id="1987" chance="100000">
+        <inside>
+           <item id="2541" chance="7999"/>
+    <item id="2398" chance="4888"/>
+           <item id="2148" countmax="7" chance1="65000" chancemax="0"/>
+        </inside>
+     </item>
+  </loot>
+</monster>

@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+<npc name="Ravain" script="Bree/carpetbree.lua" walkinterval="0" access="3" lookdir="4">
+	<health now="1000" max="1000"/>
+<look type="146" head="1" body="95" legs="95" feet="2" addons="3" corpse="3128"/>
+</npc>

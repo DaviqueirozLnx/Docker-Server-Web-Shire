@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Naz'Gul" nameDescription="a naz'gul" race="undead" experience="1000000" speed="360" manacost="0" skull="black">
+	<health now="3000000" max="3000000"/>
+    <look type="302" head="0" body="95" legs="0" feet="94" corpse="13609"/>
+	<targetchange interval="2000" chance="15"/>
+	<targetstrategies nearest="70" health="10" damage="10" random="10"/>
+	<flags>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag summonable="0"/>
+		<flag convinceable="0"/>
+		<flag illusionable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="70"/>
+		<flag runonhealth="0"/>
+	</flags>
+<script>
+        <event name="criticalHitSystemHP"/>
+    </script>
+    <attacks>
+	<attack name="melee" interval="2000" min="-7000" max="-8500"/>
+	<attack name="tides of darkness" interval="2500" chance="60" min="-10000" max="-11000"/>
+	<attack name="dragon firewave" interval="3500" chance="40" min="-13000" max="-15000"/>
+	<attack name="sonar" interval="4000" chance="70" min="-7000" max="-8000"/>
+	<attack name="paralyze" interval="3000" chance="20" min="-10" max="-20"/>
+    </attacks>
+	<defenses armor="27" defense="159">
+		<defense name="haste" chance="35" interval="5000">
+		</defense>
+		<defense name="healing" interval="13000" chance="60" min="35000" max="45000">
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</defense>
+                <defense name="remove wall" chance="100" interval="1000">
+		</defense>
+	</defenses>
+	<elements>
+	</elements>
+	<immunities>
+		<immunity lifedrain="1"/>
+		<immunity paralyze="1"/>
+		<immunity invisible="1"/>
+	</immunities>
+	<voices interval="1000" chance="5">
+		<voice sentence="YOU WILL DARKNESS!" yell="1"/>
+		<voice sentence="DIE HUMAN!" yell="1"/>
+	</voices>
+    <loot>
+      <item id="2160" countmax="100" chance1="100000" chancemax="0"/>
+      <item id="2160" countmax="100" chance1="10000" chancemax="0"/>
+      <item id="2229" chance="100000"/>
+      <item id="2230" chance="100000"/>
+      <item id="2231" chance="100000"/>
+	  <item id="14856" chance="400"/>
+	  <item id="13507" chance="400"/>
+	  <item id="13518" chance="400"/>
+	  <item id="13548" chance="400"/>
+      <item id="1996" chance="1500">
+        <inside>
+          <item id="13553" chance="1000"/>
+          <item id="13590" chance="1000"/>
+          <item id="13599" chance="1000"/>
+          <item id="13576" chance="1000"/>
+		  <item id="13597" chance="1000"/>	
+	  <item id="2200" chance="1500"/>
+        </inside>
+      </item>
+    </loot>
+</monster>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Second General" nameDescription="a second general" race="blood" experience="300000" speed="400" manacost="0" skull="black">
+	<health now="750000" max="750000"/>
+    <look type="307" head="0" body="95" legs="0" feet="94" corpse="3128"/>
+	<targetchange interval="2000" chance="15"/>
+	<targetstrategies nearest="70" health="10" damage="10" random="10"/>
+	<flags>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag summonable="0"/>
+		<flag convinceable="0"/>
+		<flag illusionable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="3"/>
+		<flag staticattack="70"/>
+		<flag runonhealth="0"/>
+	</flags>
+<script>
+        <event name="criticalHitSystemHP"/>
+    </script>
+	<attacks>
+	 <attack name="melee" interval="2000" min="-2300" max="-2700"/>
+    <attack name="heavy magic missile" interval="1500" chance="60" min="-1500" max="-2500"/>
+    <attack name="Great Energy Beam" interval="5100" chance="50" min="-3500" max="-5000"/>
+    <attack name="gfb energy" interval="3600" chance="50" min="-3050" max="-4050"/>
+    <attack name="gfb energy" interval="3700" chance="10" min="-3050" max="-4050"/>	
+	</attacks>
+	<defenses armor="27" defense="159">
+		<defense name="healing" interval="13000" chance="30" min="15000" max="20000">
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</defense>
+		<defense name="invisible" interval="8000" chance="40" duration="15000">
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</defense>
+		<defense name="haste" chance="40" interval="10000">
+		</defense>
+                <defense name="remove wall" chance="100" interval="1000">
+		</defense>
+	</defenses>
+	<elements>
+	</elements>
+	<immunities>
+		<immunity lifedrain="1"/>
+		<immunity paralyze="1"/>
+		<immunity invisible="1"/>
+	</immunities>
+	<voices interval="1000" chance="5">
+		<voice sentence="I can not be defeated by a human, I am one of the guardians of the gods of the world's second prius dead!NO!!!!!!!!" yell="1"/>
+		<voice sentence="I welcome that has beat the first general." yell="1"/>
+	</voices>
+    <loot>
+      <item id="2160" countmax="15" chance1="100000" chancemax="0"/>
+      <item id="2147" countmax="15" chance1="100000" chancemax="0"/>
+      <item id="2145" countmax="15" chance1="100000" chancemax="0"/>
+      <item id="2146" countmax="15" chance1="100000" chancemax="0"/>
+	  <item id="13591" chance="700"/>
+      <item id="13552" chance="700"/>
+	  <item id="13587" chance="700"/>
+	  <item id="13514" chance="300"/>
+	  <item id="13504" chance="300"/>
+      <item id="3940" chance="1500">
+        <inside>
+          <item id="13561" chance="1000"/>
+		  <item id="13562" chance="1000"/>
+          <item id="13520" chance="1000"/>
+          <item id="13551" chance="1000"/>
+          <item id="13588" chance="1000"/>
+        </inside>
+      </item>
+    </loot>
+</monster>

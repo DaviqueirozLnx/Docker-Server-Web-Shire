@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Hydramat" nameDescription="a hydramat" race="blood" experience="20000" speed="240" manacost="0">
+	<health now="11250" max="11250"/>
+	<look type="121" corpse="4283"/>
+	<targetchange interval="2000" chance="15"/>
+	<targetstrategies nearest="70" health="10" damage="10" random="10"/>
+	<flags>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag summonable="0"/>
+		<flag convinceable="0"/>
+		<flag illusionable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="70"/>
+		<flag runonhealth="400"/>
+	</flags>
+<script>
+        <event name="criticalHitSystemHP"/>
+    </script>
+	<attacks>
+		<attack name="melee" interval="2000" min="-400" max="-750"/>
+		<attack name="paralyze_hydra" interval="6000" chance="60" range="7"/>
+		<attack name="physical" chance="45" interval="3000" length="8" spread="3" min="-350" max="-490">
+			<attribute key="areaEffect" value="bluebubble"/>
+		</attack>
+		<attack name="poison" chance="20" interval="3000" length="8" spread="3" min="-470" max="-690">
+			<attribute key="areaEffect" value="poison"/>
+		</attack>
+	</attacks>
+	<defenses armor="27" defense="159">
+		<defense name="healing" chance="34" min="1000" max="2000">
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</defense>
+	</defenses>
+	<elements>
+		<element earthPercent="50"/>
+	</elements>
+	<immunities>
+		<immunity lifedrain="1"/>
+		<immunity paralyze="1"/>
+		<immunity invisible="1"/>
+	</immunities>
+	<voices interval="1000" chance="5">
+		<voice sentence="FCHHHHH" yell="1"/>
+		<voice sentence="HISSSS" yell="1"/>
+	</voices>
+    <loot>
+      <item id="2152" countmax="30" chance1="100000" chancemax="0"/>
+      <item id="2666" countmax="4" chance1="20000" chancemax="0"/>
+      <item id="2671" countmax="4" chance1="20000" chancemax="0"/>
+      <item id="1987" chance="100000">
+        <inside>
+          <item id="2498" chance="600"/>
+          <item id="2475" chance="800"/>
+          <item id="2536" chance="700"/>
+          <item id="2195" chance="900"/>
+          <item id="2214" chance="1818"/>
+          <item id="2146" countmax="1" chance1="2000" chancemax="0"/>
+          <item id="2476" chance="1200"/>
+        </inside>
+      </item>
+    </loot>
+</monster>

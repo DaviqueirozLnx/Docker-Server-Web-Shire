@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<npc name="Guard" script="guard.lua"   walkinterval="0" floorchange="20" access="5" level="1" maglevel="1">
+	<health now="100" max="100"/>
+<look type="131" head="113" body="57" legs="95" feet="113" addons="3" corpse="3065"/>
+	<parameters/>
+</npc>

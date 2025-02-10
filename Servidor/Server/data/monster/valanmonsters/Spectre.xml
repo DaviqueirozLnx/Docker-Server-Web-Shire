@@ -1,0 +1,64 @@
+<?xml version="1.0"?>
+<monster name="Spectre" nameDescription="a spectre" race="undead" experience="1550" speed="240" manacost="0">
+  <health now="1350" max="1350"/>
+  <look type="235" head="20" body="30" legs="40" feet="50" corpse="6348"/>
+ <targetchange interval="2000" chance="15"/>
+  <strategy attack="100" defense="0"/>
+  <flags>
+    <flag summonable="0"/>
+    <flag attackable="1"/>
+    <flag hostile="1"/>
+    <flag illusionable="0"/>
+    <flag convinceable="0"/>
+    <flag pushable="0"/>
+    <flag canpushitems="1"/>
+    <flag staticattack="70"/>
+    <flag lightlevel="0"/>
+    <flag lightcolor="0"/>
+    <flag targetdistance="1"/>
+    <flag runonhealth="300"/>
+  </flags>
+<script>
+        <event name="criticalHitSystemHP"/>
+    </script>
+  <attacks>
+    <attack name="melee" interval="2000" min="-150" max="-250"/>
+    <attack name="sonar" interval="4300" chance="70" min="-170" max="-360"/>
+	<attack name="life drain" range="1" interval="5000" chance="35" min="-400" max="-550"/>
+	<attack name="mana drain" interval="4500" chance="50" min="-150" max="-400"/>
+  </attacks>
+  <defenses armor="17" defense="20">
+    <defense name="ultimate healing" interval="3500" chance="40" min="300" max="380"/>
+  </defenses>
+  <immunities>
+      <immunity lifedrain="1"/>
+      <immunity paralyze="1"/>
+      <immunity invisible="1"/>
+    </immunities>
+  <voices interval="2000" chance="5">
+    <voice sentence="Revenge ... is so ... sweet."/>
+    <voice sentence="Life...force! Feed me your... lifeforce"/>
+  </voices>
+  <loot>
+    <item id="2148" countmax="100" chance1="100000" chancemax="0"/>
+    <item id="2148" countmax="100" chance1="80000" chancemax="0"/>
+    <item id="2152" countmax="7" chance1="20000" chancemax="0"/>
+    <item id="2260" chance="30000"/>
+    <item id="5909" chance="3000"/>
+    <item id="2134" chance="9000"/>
+    <item id="2642" chance="30000"/>
+        <item id="6500" chance="2000"/>
+        <item id="5944" chance="2500"/>
+
+    <item id="1987" chance="100000">
+      <inside>
+    <item id="2148" countmax="100" chance1="40000" chancemax="0"/>
+        <item id="2071" chance="20000"/>
+        <item id="2189" chance="6000"/>
+        <item id="6300" chance="2000"/>
+        <item id="2165" chance="3000"/>
+        <item id="7451" chance="2000"/>
+      </inside>
+    </item>
+  </loot>
+</monster>

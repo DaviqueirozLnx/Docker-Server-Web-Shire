@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Gorilla Warrior" nameDescription="a gorilla warrior" race="blood" experience="7500" speed="290" manacost="0">
+  <health now="10200" max="10200"/>
+  <look type="116" head="0" body="0" legs="0" feet="0" corpse="4268"/>
+  <targetchange interval="2000" chance="10"/>
+  <strategy attack="100" defense="0"/>
+  <flags>
+    <flag summonable="0"/>
+    <flag attackable="1"/>
+    <flag hostile="1"/>
+    <flag illusionable="0"/>
+    <flag convinceable="0"/>
+    <flag pushable="0"/>
+    <flag canpushitems="0"/>
+    <flag staticattack="70"/>
+    <flag lightlevel="0"/>
+    <flag lightcolor="0"/>
+    <flag targetdistance="1"/>
+    <flag runonhealth="0"/>
+  </flags>
+<script>
+        <event name="criticalHitSystemHP"/>
+    </script>
+  <attacks>
+    <attack name="melee" interval="2000" min="-400" max="-850"/>
+	<attack name="emorragia" range="1" interval="3000" chance="1" min="-800" max="-1600"/>
+	<attack name="large rock" interval="4700" chance="35" min="-400" max="-650"/>
+	<attack name="small stone" interval="2700" chance="35" min="-200" max="-400"/>
+	<attack name="paralyze" interval="5500" chance="30" min="-10" max="-20"/>
+  </attacks>
+  <defenses armor="44" defense="42">
+    <defense name="haste" interval="6000" chance="40"/>
+  </defenses>
+  <immunities>
+      <immunity lifedrain="1"/>
+      <immunity paralyze="1"/>
+      <immunity invisible="1"/>
+    </immunities>
+  <voices interval="2000" chance="5">
+    <voice sentence="BUGAAAAA!"/>
+    <voice sentence="MUNGH MUUNGH!"/>
+  </voices>
+    <loot>
+      <item id="2149" countmax="5" chance1="90000" chancemax="0"/>
+      <item id="2389" countmax="6" chance1="80000" chancemax="0"/>
+      <item id="2436" chance="4500"/>
+      <item id="2219" chance="50000"/>
+      <item id="2676" countmax="10" chance1="100000" chancemax="0"/>
+      <item id="5883" countmax="1" chance1="10" chancemax="0"/>
+      <item id="2320" countmax="5" chance1="100000" chancemax="0"/>
+      <item id="2487" chance="5500"/>
+      <item id="2488" chance="2500"/>
+      <item id="2472" chance="500"/>
+      <item id="2645" chance="500"/>
+      <item id="2470" chance="1000"/>
+      <item id="2466" chance="1000"/>
+      <item id="1987" chance="100000">
+        <inside>
+          <item id="2231" chance="10000"/>
+          <item id="2230" chance="10000"/>
+          <item id="2519" chance="5500"/>
+          <item id="2393" chance="2000"/>
+          <item id="2391" chance="2000"/>
+          <item id="2452" chance="1000"/>
+          <item id="2444" chance="1500"/>
+          <item id="2443" chance="1500"/>
+          <item id="2414" chance="2000"/>
+        </inside>
+      </item>
+    </loot>
+</monster>

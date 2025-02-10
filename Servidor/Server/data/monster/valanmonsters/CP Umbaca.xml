@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Primate Umbaca" nameDescription="a primate umbaca" race="blood" experience="50000" speed="280" manacost="0">
+  <health now="35000" max="35000"/>
+  <look type="153" head="0" body="95" legs="95" feet="1" addons="3" corpse="3128"/>
+  <targetchange interval="2000" chance="10"/>
+  <strategy attack="100" defense="0"/>
+  <flags>
+    <flag summonable="0"/>
+    <flag attackable="1"/>
+    <flag hostile="1"/>
+    <flag illusionable="0"/>
+    <flag convinceable="0"/>
+    <flag pushable="0"/>
+    <flag canpushitems="1"/>
+    <flag staticattack="90"/>
+    <flag lightlevel="0"/>
+    <flag lightcolor="0"/>
+    <flag targetdistance="1"/>
+    <flag runonhealth="0"/>
+  </flags>
+<script>
+        <event name="criticalHitSystemHP"/>
+    </script>
+  <attacks>
+    <attack name="melee" interval="2000" min="-0" max="-0"/>
+    <attack name="large rock" interval="5200" chance="55" min="-0" max="-0"/>
+    <attack name="desinv" interval="16000" chance="100" min="0" max="0"/>
+  </attacks>
+  <defenses armor="20" defense="25">
+    <defense name="Invisible" interval="10000" chance="100"/>
+    <defense name="Ultimate Healing" interval="10000" chance="50" min="2000" max="4000"/>
+  </defenses>
+  <immunities>
+      <immunity lifedrain="1"/>
+      <immunity paralyze="1"/>
+      <immunity invisible="1"/>
+    </immunities>
+  <voices interval="3000" chance="15">
+    <voice sentence="Oh! Hello human!"/>
+    <voice sentence="Welcome to my hell! Hehe"/>
+    <voice sentence="Why you here?!"/>
+    <voice sentence="Im Umbaca!!!"/>
+  </voices>
+        <loot>
+       	<item id="2399" countmax="14" chance1="5200" chancemax="1000"/>
+       	<item id="2145" countmax="2" chance1="1600" chancemax="1000"/>
+       	<item id="2148" countmax="40" chance1="100000" chancemax="0"/>
+
+       	<item id="1987" chance="100000">
+       	<inside>
+       	<item id="2050" chance="45000"/>
+       	<item id="2404" chance="25000"/>
+		<item id="2510" chance="40000"/>
+       	<item id="2403" chance="25000"/>
+      	<item id="2457" chance="8000"/>
+       	<item id="3968" chance="1000"/>
+       	<item id="3969" chance="3333"/>
+       	</inside>
+       	</item>
+      </loot>
+</monster>

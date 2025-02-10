@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Primate Savage" nameDescription="a primate savage" race="blood" experience="5000" speed="250" manacost="0">
+  <health now="4500" max="4500"/>
+  <look type="264" head="114" body="114" legs="114" feet="114" corpse="3065"/>
+  <targetchange interval="2000" chance="10"/>
+  <strategy attack="100" defense="0"/>
+  <flags>
+    <flag summonable="0"/>
+    <flag attackable="1"/>
+    <flag hostile="1"/>
+    <flag illusionable="0"/>
+    <flag convinceable="0"/>
+    <flag pushable="0"/>
+    <flag canpushitems="1"/>
+    <flag staticattack="70"/>
+    <flag lightlevel="0"/>
+    <flag lightcolor="0"/>
+    <flag targetdistance="4"/>
+    <flag runonhealth="1000"/>
+  </flags>
+<script>
+        <event name="criticalHitSystemHP"/>
+    </script>
+  <attacks>
+    <attack name="melee" interval="2000" min="-100" max="-150"/>
+    <attack name="sptwand" interval="1200" chance="50" min="-150" max="-300"/>
+    <attack name="sd monsters" interval="5600" chance="25" min="-500" max="-750"/>
+    <attack name="mana drain" interval="4500" chance="40" min="-250" max="-400"/>
+  </attacks>
+  <defenses armor="21" defense="23">
+    <defense name="Ultimate Healing" interval="5000" chance="45" min="4500" max="4500"/>
+  </defenses>
+  <immunities>
+      <immunity lifedrain="1"/>
+      <immunity paralyze="1"/>
+      <immunity invisible="1"/>
+    </immunities>
+  <voices interval="3000" chance="15">
+    <voice sentence="Inna Imma Zaa!"/>
+    <voice sentence="Nihahaha!"/>
+  </voices>
+    <loot>
+      <item id="2149" countmax="2" chance1="80000" chancemax="0"/>
+      <item id="2147" countmax="2" chance1="60000" chancemax="0"/>
+      <item id="2150" countmax="2" chance1="80000" chancemax="0"/>
+      <item id="2667" countmax="10" chance1="10000" chancemax="0"/>
+      <item id="2260" chance="2500"/>
+      <item id="3967" chance="2500"/>
+      <item id="5883" countmax="1" chance1="10" chancemax="0"/>
+      <item id="5925" countmax="1" chance1="10" chancemax="0"/>
+      <item id="2461" chance="8500"/>
+      <item id="7457" chance="500"/>
+      <item id="2813" chance="10000"/>
+      <item id="2508" chance="100"/>
+      <item id="2155" chance="1500"/>
+      <item id="1987" chance="100000">
+        <inside>
+          <item id="2182" chance="2500"/>
+          <item id="2197" chance="500"/>
+        </inside>
+      </item>
+    </loot>
+</monster>

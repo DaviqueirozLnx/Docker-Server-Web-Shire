@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Diamond Spider" nameDescription="a diamond spider" race="undead" experience="3200" speed="270" manacost="0">
+  <health now="6000" max="6000"/>
+  <look type="263" head="0" body="0" legs="0" feet="0" corpse="7344"/>
+  <targetchange interval="2000" chance="15"/>
+  <strategy attack="100" defense="0"/>
+  <flags>
+    <flag summonable="0"/>
+    <flag attackable="1"/>
+    <flag hostile="1"/>
+    <flag illusionable="1"/>
+    <flag convinceable="0"/>
+    <flag pushable="0"/>
+    <flag canpushitems="1"/>
+    <flag staticattack="80"/>
+    <flag lightlevel="0"/>
+    <flag lightcolor="0"/>
+    <flag targetdistance="1"/>
+    <flag runonhealth="0"/>
+  </flags>
+<script>
+        <event name="criticalHitSystemHP"/>
+    </script>
+  <attacks>
+    <attack name="melee" interval="2000" min="-600" max="-1000"/>
+    <attack name="paralyze" interval="3500" chance="45"/>
+    <attack name="energy missile" interval="3000" chance="75" min="-140" max="-220"/>
+  </attacks>
+  <defenses armor="47" defense="52">
+    <attack name="haste" interval="4500" chance="55"/>
+  </defenses>
+  <immunities>
+      <immunity lifedrain="1"/>
+      <immunity paralyze="1"/>
+      <immunity invisible="1"/>
+    </immunities>
+<voices interval="2000" chance="5">
+    <voice sentence="Screeechsz!"/>
+  </voices>
+  <loot>
+    <item id="2152" countmax="5" chance1="100000" chancemax="0"/>
+    <item id="2145" countmax="1" chance1="10000" chancemax="0"/>
+    <item id="2160" countmax="1" chance1="10" chancemax="0"/>
+    <item id="7387" chance="2333"/>
+    <item id="2476" chance="1428"/>
+    <item id="2124" chance="2555"/>
+    <item id="2177" chance="1222"/>
+    <item id="7437" chance="1700"/>
+    <item id="1987" chance="100000">
+      <inside>
+        <item id="2445" chance="555"/>
+        <item id="2184" chance="555"/>
+        <item id="7449" chance="1555"/>
+        <item id="2477" chance="1000"/>
+        <item id="7364" countmax="7" chance1="1777" chancemax="0"/>
+        <item id="7290" chance="500"/>
+      </inside>
+    </item>
+  </loot>
+</monster>

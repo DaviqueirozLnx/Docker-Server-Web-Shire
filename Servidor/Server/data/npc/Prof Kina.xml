@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+<npc name="Mentor Ferhur"  script="Rook/mkina2.lua"  walkinterval="0"  >
+	<health now="150" max="150"/>
+	<look type="131" head="96" body="57" legs="19" feet="96" addons="3" corpse="3128"/>
+</npc>

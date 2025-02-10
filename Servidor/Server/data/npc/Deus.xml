@@ -1,0 +1,9 @@
+<npc name="Arkalis" script="The Oracle.lua"  walkinterval="0"  speechbubble="3">
+	<health now="100" max="100" />
+	<look type="526" head="20" body="39" legs="45" feet="7" addons="0" />
+	<parameters>
+	<parameter key="message_greet" value="|PLAYERNAME|, ARE YOU PREPARED TO FACE YOUR DESTINY?"/>
+	<parameter key="message_walkaway" value="COME BACK WHEN YOU ARE PREPARED TO FACE YOUR DESTINY!"/>
+	<parameter key="message_farewell" value="COME BACK WHEN YOU ARE PREPARED TO FACE YOUR DESTINY!"/>
+	</parameters>
+	</npc>

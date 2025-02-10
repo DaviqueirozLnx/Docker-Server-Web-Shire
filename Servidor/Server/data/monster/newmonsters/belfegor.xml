@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <monster name="Belfegor" species="fire" nameDescription="an belfegor" race="blood" experience="285000" speed="320" manacost="0">
+    <health now="750000" max="750000"/>
+    <look type="479" head="20" body="30" legs="40" feet="50" corpse="6068"/>
+    <targetchange interval="2000" chance="15"/>
+    <strategy attack="100" defense="0"/>
+    <flags>
+      <flag summonable="0"/>
+      <flag attackable="1"/>
+      <flag hostile="1"/>
+      <flag illusionable="0"/>
+      <flag convinceable="0"/>
+      <flag pushable="0"/>
+      <flag canpushitems="1"/>
+      <flag staticattack="10"/>
+      <flag lightlevel="0"/>
+      <flag lightcolor="0"/>
+      <flag targetdistance="1"/>
+      <flag runonhealth="0"/>
+    </flags>
+<script>
+        <event name="criticalHitSystemHP"/>
+    </script>
+    <attacks>
+      <attack name="melee" interval="2000" min="-5000" max="-6000"/>
+	<attack name="physical" interval="3000" chance="30" range="1" min="-7000" max="-8000"> 
+				<attribute key="areaEffect" value="stun"/>
+			</attack> 
+    <attack name="fe explosion" interval="4200" chance="50" min="-3000" max="-4000"/>
+    <attack name="heavy magic missile" interval="3000" chance="40" min="-3000" max="-4005"/>
+<attack name="dragon firewave" interval="6000" chance="50" min="-5550" max="-7650"/>
+  <attack name="great fireball" interval="6000" chance="60" min="-5450" max="-6000"/>
+        <attack name="dragon firebomb" interval="4000" chance="60" min="-20" max="-20"/>
+	  <attack name="paralyze" interval="5000" chance="30" min="-500" max="-1300"/>
+    </attacks>
+    <defenses armor="40" defense="40">
+    </defenses>
+    <immunities>
+      <immunity lifedrain="1"/>
+      <immunity paralyze="1"/>
+      <immunity drunk="1"/>
+      <immunity invisible="1"/>
+    </immunities>
+    <loot>
+      <item id="2160" countmax="5" chance1="100000" chancemax="0"/>
+      <item id="2147" countmax="15" chance1="100000" chancemax="0"/>
+      <item id="5468" chance="1500"/> 
+	  <item id="14991" chance="800"/>
+      <item id="2353" chance="2500"/>     
+      <item id="1993" chance="1500">
+      <inside>
+          <item id="13550" chance="1500"/> --Phoenix Helmet
+          <item id="13546" chance="1500"/> --Alabarda Of Fire
+          <item id="13565" chance="1500"/> --Balrog Shield
+          <item id="13527" chance="1500"/> --Phoenix Wand
+          <item id="13607" chance="1500"/> --four blades
+          <item id="13572" chance="1500"/> --Phoenix Shield
+          <item id="13510" chance="1500"/> --Magma Axe
+	  <item id="2142" chance="1500"/>
+         </inside>
+        </item>
+    </loot>
+  </monster>

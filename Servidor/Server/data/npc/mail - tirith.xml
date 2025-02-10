@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<npc name="Anna Beas" script="default.lua" access="3"  walkinterval="0" lookdir="1">
+	<health now="1000" max="1000"/>
+	<look type="136" head="95" body="101" legs="101" feet="96" addons="0" corpse="3128"/>
+	<parameters>
+		<parameter key="module_shop" value="1" />
+		<parameter key="shop_buyable" value="parcel,2595,10;label,2599,5;letter,2597,10" />
+	</parameters>
+</npc>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Ferumbras" nameDescription="a ferumbras" race="venon" experience="12000" speed="200" manacost="0">
+  <health now="15000" max="15000"/>
+  <look type="229" head="20" body="30" legs="40" feet="50" corpse="5931"/>
+ <targetchange interval="2000" chance="15"/>
+  <strategy attack="100" defense="0"/>
+  <flags>
+    <flag summonable="0"/>
+    <flag attackable="1"/>
+    <flag hostile="1"/>
+    <flag illusionable="0"/>
+    <flag convinceable="0"/>
+    <flag pushable="0"/>
+    <flag canpushitems="1"/>
+    <flag staticattack="70"/>
+    <flag lightlevel="0"/>
+    <flag lightcolor="0"/>
+    <flag targetdistance="5"/>
+    <flag runonhealth="2500"/>
+  </flags>
+<script>
+        <event name="criticalHitSystemHP"/>
+    </script>
+  <attacks>
+    <attack name="melee" interval="2000" min="-300" max="-400"/>
+    <attack name="mana drain" interval="4500" chance="70" min="-500" max="-700"/>
+    <attack name="ue exori" interval="4000" chance="70" min="-850" max="-1400"/>
+	<attack name="ue energy" interval="6000" chance="70" min="-300" max="-500"/>
+    <attack name="gfb lifedrain" interval="2200" chance="45" min="-300" max="-600"/>
+	<attack name="gfb poison" interval="2500" chance="40" min="-550" max="-750"/>
+	<attack name="gfb smoke" interval="3500" chance="40" min="-500" max="-700"/>
+	<attack name="poison spit" interval="4000" chance="70" min="-20" max="-25"/>
+  </attacks>
+  <defenses armor="30" defense="30">
+    <defense name="ultimate healing" interval="6000" chance="80" min="1500" max="2500"/>
+  </defenses>
+  <immunities>
+      <immunity lifedrain="1"/>
+      <immunity paralyze="1"/>
+      <immunity invisible="1"/>
+    </immunities>
+  <summons max="6">
+    <summon name="Demon" interval="4000" chance="30"/>
+  </summons>
+  <voices interval="2000" chance="5">
+    <voice sentence="Ferumbras is back!"/>
+    <voice sentence="Hail Zathroth!"/>
+    <voice sentence="Hail the Ruthless Seven!"/>
+    <voice sentence="Human power should be equaled to the earth's crust!"/>
+	<voice sentence="NO ONE WILL STOP ME THIS TIME!"/>
+	<voice sentence="THE POWER IS MINE!"/>
+  </voices>
+  <loot>
+    <item id="2148" countmax="85" chance1="100000" chancemax="0"/>
+	<item id="2148" countmax="45" chance1="50000" chancemax="0"/>
+    <item id="2145" countmax="5" chance1="10000" chancemax="0"/>
+    <item id="2124" chance="4909"/>
+    <item id="1987" chance="100000">
+      <inside>
+        <item id="2167" chance="6833"/>
+        <item id="2432" chance="3333"/>
+      </inside>
+    </item>
+  </loot>
+</monster>

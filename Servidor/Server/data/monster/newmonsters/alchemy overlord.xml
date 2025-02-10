@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Alchemy Overlord" nameDescription="an alchemy overlord" race="blood" experience="800000" speed="360" manacost="0" skull="black">
+	<health now="1250000" max="1250000"/>
+    <look type="477" head="96" body="0" legs="114" feet="96" addons="3" corpse="3128"/>
+	<targetchange interval="2000" chance="15"/>
+	<targetstrategies nearest="70" health="10" damage="10" random="10"/>
+	<flags>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag summonable="0"/>
+		<flag convinceable="0"/>
+		<flag illusionable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="5"/>
+		<flag staticattack="70"/>
+		<flag runonhealth="0"/>
+	</flags>
+<script>
+        <event name="criticalHitSystemHP"/>
+    </script>
+	<attacks>
+			<attack name="melee" interval="2000" min="-1500" max="-2500"/>
+			<attack name="multipla gravita" interval="2000" chance="100" min="-5000" max="-5500"/>
+			<attack name="paralyze" interval="5500" chance="30" min="-30" max="-30"/>
+			<attack name="sd monsters"  interval="6600" chance="70" min="-3000" max="-3500"/>
+            <attack name="fe explosion" interval="2400" chance="80" min="-3000" max="-3500"/>
+            <attack name="silence rune" interval="4000" chance="20"/>
+			<attack name="teleport inversor tp" interval="7000" chance="30"/>
+			<attack name="teleport inversor tp" interval="12000" chance="100"/>
+			<attack name="fogo inversor" interval="12000" chance="100" min="-10000" max="-11500"/>
+            <attack name="energy rain"  interval="10000" chance="50" min="-8000" max="-9000"/>
+	</attacks>
+	<defenses armor="27" defense="159">
+		<defense name="healing" interval="13000" chance="30" min="25000" max="35000">
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</defense>
+		<defense name="invisible" interval="10000" chance="20" duration="15000">
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</defense>
+		<defense name="haste" chance="40" interval="10000">
+		</defense>
+		<defense name="remove wall" chance="100" interval="1000">
+		</defense>
+	</defenses>
+	<elements>
+		<element earthPercent="0"/>
+	</elements>
+	<immunities>
+		<immunity lifedrain="1"/>
+		<immunity paralyze="1"/>
+		<immunity invisible="1"/>
+	</immunities>
+	<voices interval="1000" chance="5">
+		<voice sentence="I AM THE ANCIENT LORD!" yell="1"/>
+		<voice sentence="Respect our home!" yell="1"/>
+	</voices>
+        <loot>
+       	<item id="2160" countmax="10" chance1="100000" chancemax="0"/>
+       	<item id="2789" countmax="10" chance1="60000" chancemax="0"/>
+       	<item id="2788" chance="10000"/>
+        <item id="2474" chance="10000"/>
+      <item id="2400" chance="3000"/>
+      <item id="2431" chance="3000"/>
+      <item id="2522" chance="3000"/>
+      <item id="13577" chance="3000"/>
+      <item id="2421" chance="3000"/>
+          <item id="7392" chance="1500"/>
+          <item id="2408" chance="1500"/>
+          <item id="2415" chance="1500"/>
+          <item id="2523" chance="1500"/>
+        <item id="2452" chance="5000"/>
+        <item id="2443" chance="5000"/>
+        <item id="2444" chance="5000"/>
+
+       	<item id="3939" chance="100000">
+       	<inside>
+       	<item id="7431" chance="3000"/>
+       	<item id="7390" chance="3000"/>
+       	<item id="13531" chance="1000"/>
+       	<item id="7423" chance="1000"/>
+       	<item id="7405" chance="1000"/>
+       	<item id="13552" chance="500"/>
+       	<item id="13591" chance="500"/>
+       	</inside>
+       	</item>
+      </loot>
+</monster>

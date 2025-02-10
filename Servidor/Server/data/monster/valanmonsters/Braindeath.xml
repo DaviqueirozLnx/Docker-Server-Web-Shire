@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Braindeath" nameDescription="a braindeath" race="undead" experience="985" speed="225" manacost="0">
+  <health now="1225" max="1225"/>
+  <look type="256" head="20" body="30" legs="40" feet="50" corpse="7256"/>
+ <targetchange interval="2000" chance="15"/>
+  <strategy attack="100" defense="0"/>
+  <flags>
+    <flag summonable="0"/>
+    <flag attackable="1"/>
+    <flag hostile="1"/>
+    <flag illusionable="0/"/>
+    <flag convinceable="0"/>
+    <flag pushable="0"/>
+    <flag canpushitems="1"/>
+    <flag staticattack="70"/>
+    <flag lightlevel="0"/>
+    <flag lightcolor="0"/>
+    <flag targetdistance="1"/>
+    <flag runonhealth="5"/>
+  </flags>
+<script>
+        <event name="criticalHitSystemHP"/>
+    </script>
+  <attacks>
+    <attack name="melee" interval="2000" min="-100" max="-255"/>
+    <attack name="mana drain" interval="6000" chance="70" min="-120" max="-240"/>
+    <attack name="sd monsters" interval="3500" chance="70" min="-100" max="-190"/>
+    <attack name="heavy magic missile" interval="1500" chance="30" min="-80" max="-155"/>
+  </attacks>
+  <defenses armor="22" defense="23"/>
+  <immunities>
+      <immunity lifedrain="1"/>
+      <immunity paralyze="1"/>
+      <immunity invisible="1"/>
+    </immunities>
+
+ <summons maxSummons="3">
+      <summon name="Vampire" interval="2500" chance="15"/>
+    </summons>
+
+  <voices interval="2000" chance="5">
+    <voice sentence="You have disturbed my thoughts!"/>
+    <voice sentence="Let me turn you into something more useful!"/>
+  </voices>
+  <loot>
+    <item id="2148" countmax="91" chance1="100000" chancemax="0"/>
+    <item id="7364" countmax="3" chance1="3000" chancemax="0"/>
+    <item id="2509" chance="6777"/>
+    <item id="2175" chance="4888"/>
+    <item id="2518" chance="2888"/>
+    <item id="5898" chance="1500"/>
+    <item id="3972" chance="888"/>
+    <item id="1987" chance="100000">
+        <inside>
+           <item id="2423" chance="4999"/>
+           <item id="2450" chance="11111"/>
+           <item id="7407" chance="1500"/>
+           <item id="7452" chance="1000"/>
+        </inside>
+     </item>
+  </loot>
+</monster>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Ilusion Corrupted" nameDescription="a ilusion corrupted" race="undead" experience="1000000" speed="380" manacost="0">
+	<health now="30000" max="30000"/>
+    <look type="402" head="0" body="95" legs="0" feet="94" corpse="14039"/>
+	<targetchange interval="2000" chance="15"/>
+	<targetstrategies nearest="70" health="10" damage="10" random="10"/>
+	<flags>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag summonable="0"/>
+		<flag convinceable="0"/>
+		<flag illusionable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="70"/>
+		<flag runonhealth="0"/>
+	</flags>
+<script>
+        <event name="criticalHitSystemHP"/>
+    </script>
+    <attacks>
+      <attack name="melee" interval="2000" min="-7000" max="-7500"/>
+	  <attack name="fire gfb multiplo" interval="8000" chance="30" min="-14500" max="-15000"/>
+      <attack name="sd monsters" interval="2500" chance="30" min="-6000" max="-7000"/>
+      <attack name="tides of darkness" interval="7500" chance="50" min="-10000" max="-11000"/>
+	  <attack name="fire gfb multiplo" interval="8000" chance="50" min="-14500" max="-15000"/>
+	  <attack name="corrente" interval="9500" chance="50" min="-13500" max="-14000"/>
+	  <attack name="corrente" interval="8200" chance="100" min="-13500" max="-14000"/>
+	  <attack name="expulsao darkness" interval="7000" chance="40" min="-9000" max="-10000"/>
+	  <attack name="poff2" interval="8000" chance="100" min="-2" max="-2"/>
+	  <attack name="poff2" interval="12000" chance="50" min="-2" max="-2"/>
+    </attacks>
+	<defenses armor="27" defense="159">
+		<defense name="haste" chance="35" interval="5000">
+		</defense>
+		<defense name="healing" interval="13000" chance="60" min="40000" max="50000">
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</defense>
+		<defense name="invisible" interval="6000" chance="30" duration="15000">
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</defense>
+	</defenses>
+	<elements>
+	</elements>
+	<immunities>
+		<immunity lifedrain="1"/>
+		<immunity paralyze="1"/>
+		<immunity invisible="1"/>
+	</immunities>
+		<summons maxSummons="0">
+      <summon name="Ilusion Corrupted" interval="2000" chance="90"/>
+    </summons>
+	<voices interval="1000" chance="5">
+		<voice sentence="Slay your friends and I will spare you!" yell="1"/>
+		<voice sentence="feel the power of the great power eternal darkness!" yell="1"/>
+	</voices>
+   <loot>
+    <item id="13685" countmax="1" chance1="100000" chancemax="0"/>  --ruby coin
+    <item id="2144" countmax="100" chance1="50000" chancemax="0"/>  --black pearl
+    <item id="2792" countmax="50" chance1="50000" chancemax="0"/>  --dark mushroom
+      <item id="13581" chance="500"/> --Shadow Armor
+      <item id="13556" chance="800"/> --Darkness Helmet
+        <item id="6300" chance="1000"/>  -- death ring
+    <item id="1998" chance="100000">  --bag
+      <inside>
+          <item id="2471" chance="600"/> --Magic Golden Helmet
+          <item id="13589" chance="550"/> --Magic Golden Armor
+          <item id="13598" chance="650"/> --Magic Golden Legs
+          <item id="2646" chance="650"/> --Magic Golden boots
+          <item id="13575" chance="600"/> --Magic Golden shield
+          <item id="13548" chance="600"/> --Thurdilion Sword
+          <item id="13514" chance="600"/> --hammer of Thor
+          <item id="13501" chance="600"/> --adamantiun axe
+          <item id="13561" chance="400"/> --General Boots
+          <item id="13520" chance="400"/> --Magic Plague Wand
+          <item id="13544" chance="450"/> --Divine Sword
+          <item id="13530" chance="500"/> --Celestial Crossbow
+          <item id="13501" chance="450"/> --Adamantiun Axe
+          <item id="13608" chance="300"/> --Iron Gloves
+      </inside>
+    </item>
+  </loot>
+</monster>

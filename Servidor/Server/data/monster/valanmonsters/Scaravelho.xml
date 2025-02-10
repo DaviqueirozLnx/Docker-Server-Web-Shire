@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Scaravelho" nameDescription="a scaravelho" race="venom" experience="120" speed="600" manacost="0">
+  <health now="2000" max="2000"/>
+  <look type="83" head="20" body="30" legs="40" feet="50" corpse="3013"/>
+ <targetchange interval="2000" chance="15"/>
+  <strategy attack="100" defense="0"/>
+  <flags>
+    <flag summonable="1"/>
+    <flag attackable="1"/>
+    <flag hostile="1"/>
+    <flag illusionable="0"/>
+    <flag convinceable="1"/>
+    <flag pushable="0"/>
+    <flag canpushitems="0"/>
+    <flag staticattack="40"/>
+    <flag lightlevel="0"/>
+    <flag lightcolor="0"/>
+    <flag targetdistance="1"/>
+    <flag runonhealth="85"/>
+  </flags>
+<script>
+        <event name="criticalHitSystemHP"/>
+    </script>
+  <attacks>
+    <attack name="melee" interval="2000" min="-250" max="-300"/>
+    <attack name="poison field" interval="6500" min="-21" max="-60"/>
+  </attacks>
+  <defenses armor="17" defense="20">
+    <defense name="haste" interval="5000" chance="40"/>
+  </defenses>
+  <immunities>
+      <immunity lifedrain="1"/>
+      <immunity paralyze="1"/>
+      <immunity invisible="1"/>
+    </immunities>
+</monster>

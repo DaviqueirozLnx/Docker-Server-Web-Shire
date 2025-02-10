@@ -1,0 +1,65 @@
+<?xml version="1.0"?>
+<monster name="Lost Soul" nameDescription="a lost soul" race="undead" experience="5500" speed="250" manacost="0">
+	<health now="8500" max="8500"/> 
+	<look type="232" head="20" body="30" legs="40" feet="50" corpse="6310"/>
+  <targetchange interval="2000" chance="15"/>
+  <strategy attack="100" defense="0"/>
+  <flags>
+    <flag summonable="0"/>
+    <flag attackable="1"/>
+    <flag hostile="1"/>
+    <flag illusionable="0"/>
+    <flag convinceable="0"/>
+    <flag pushable="0"/>
+    <flag canpushitems="1"/>
+    <flag staticattack="90"/>
+    <flag lightlevel="0"/>
+    <flag lightcolor="0"/>
+    <flag targetdistance="1"/>
+    <flag runonhealth="1500"/>
+  </flags>
+<script>
+        <event name="criticalHitSystemHP"/>
+    </script>
+  <attacks>
+    <attack name="melee" interval="2000" min="-200" max="-500"/>
+	<attack name="paralyze" interval="3000" chance="30" min="-180" max="-274"/>
+	<attack name="poison storm" interval="3500" chance="40" min="-30" max="-40"/>
+	<attack name="lost drain" interval="4500" chance="40" min="-100" max="-200"/>
+  </attacks>
+  <defenses armor="30" defense="35">
+  </defenses>
+  <immunities>
+      <immunity lifedrain="1"/>
+      <immunity paralyze="1"/>
+      <immunity invisible="1"/>
+    </immunities>
+    <voices interval="2000" chance="5">
+    <voice sentence="Mouuuurn meeee!"/>
+	<voice sentence="Forgive Meeeee!"/>
+  </voices>
+  <loot>
+    <item id="2148" countmax="100" chance1="100000" chancemax="0"/>
+	<item id="2148" countmax="100" chance1="100000" chancemax="0"/>
+    <item id="2152" countmax="4" chance1="80000" chancemax="0"/>
+	<item id="2227" chance="30000"/>
+	<item id="2260" chance="10000"/>
+	<item id="2480" chance="8000"/>
+	<item id="2483" chance="7000"/>
+	<item id="2463" chance="6000"/>
+	<item id="6500" chance="2000"/>
+	<item id="5944" chance="2000"/>
+
+	<item id="1987" chance="100000">
+      <inside>
+	<item id="2148" countmax="20" chance1="80000" chancemax="0"/>
+    	<item id="2050" chance="40000"/>
+        <item id="6300" chance="2000"/>
+        <item id="5801" chance="2000"/>
+        <item id="2436" chance="6000"/>
+        <item id="7413" chance="1500"/>
+      </inside>
+    </item>
+  </loot>
+  
+</monster>

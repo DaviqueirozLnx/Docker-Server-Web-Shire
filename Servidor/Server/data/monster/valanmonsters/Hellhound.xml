@@ -1,0 +1,59 @@
+<?xml version="1.0"?>
+<monster name="Hellhound" nameDescription="a Fury" race="fire" experience="5350" speed="300" manacost="0">
+  <health now="7500" max="7500"/>
+  <look type="240" head="20" body="30" legs="40" feet="50" corpse="6333"/>
+  <targetchange interval="2000" chance="15"/>
+  <strategy attack="100" defense="0"/>
+  <flags>
+    <flag summonable="0"/>
+    <flag attackable="1"/>
+    <flag hostile="1"/>
+    <flag illusionable="0"/>
+    <flag convinceable="0"/>
+    <flag pushable="0"/>
+    <flag canpushitems="1"/>
+    <flag staticattack="80"/>
+    <flag lightlevel="0"/>
+    <flag lightcolor="0"/>
+    <flag targetdistance="1"/>
+    <flag runonhealth="0"/>
+  </flags>
+<script>
+        <event name="criticalHitSystemHP"/>
+    </script>
+<attacks>
+  <attack name="melee" interval="2000" min="-300" max="-500"/>
+  <attack name="hydra poisonwave" interval="5000" min="350" max="650" chance="70"/>
+  <attack name="fire wave" interval="4000" min="-400" max="-700" chance="65"/>
+  <attack name="sd monsters" interval="5500" min="-300" max="-480" chance="75"/>
+  <attack name="poison spit" interval="3500" min="-300" max="-480" chance="55"/>
+</attacks>
+  <defenses armor="21" defense="31"/>
+  <immunities>
+      <immunity lifedrain="1"/>
+      <immunity paralyze="1"/>
+      <immunity invisible="1"/>
+    </immunities>
+  <voices interval="3000" chance="15">
+    <voice sentence="GROOOWL!"/>
+    <voice sentence="GRRRRR"/>
+  </voices>
+  <loot>
+   <item id="2148" countmax="100" chance1="100000" chancemax="0"/>
+   <item id="5944" chance="2555"/>
+   <item id="2671" countmax="5" chance1="50000" chancemax="0"/>
+   <item id="2230" chance="25000"/>
+   <item id="6499" countmax="1" chance1="1200" chancemax="0"/>
+   <item id="2231" chance="30000"/>
+   <item id="2144" countmax="3" chance1="9999" chancemax="0"/>
+   <item id="1987" chance="100000">
+  <inside>
+   <item id="2430" chance="3200"/>
+   <item id="2383" chance="3300"/>
+   <item id="2410" countmax="7" chance1="15000" chancemax="0"/>
+   <item id="14999" countmax="2" chance1="1888" chancemax="0"/>
+   <item id="6553" chance="500"/>
+</inside>
+</item>
+</loot>
+</monster>

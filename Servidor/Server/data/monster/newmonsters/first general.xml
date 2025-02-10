@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="First General" nameDescription="a first general" race="blood" experience="300000" speed="330" manacost="0" skull="black">
+	<health now="750000" max="750000"/>
+    <look type="309" head="0" body="95" legs="0" feet="94" corpse="3129"/>
+	<targetchange interval="2000" chance="15"/>
+	<targetstrategies nearest="70" health="10" damage="10" random="10"/>
+	<flags>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag summonable="0"/>
+		<flag convinceable="0"/>
+		<flag illusionable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="70"/>
+		<flag runonhealth="0"/>
+	</flags>
+<script>
+        <event name="criticalHitSystemHP"/>
+    </script>
+    <attacks>
+      <attack name="melee" interval="2000" min="-4500" max="-5500"/>
+      <attack name="spear" interval="2500" chance="40" min="-2500" max="-3500"/>
+      <attack name="berserk monsters" interval="3500" chance="60" min="-2500" max="-3600"/>
+      <attack name="physical" interval="7000" chance="25" range="1" min="-5000" max="-6500"> 
+	       <attribute key="areaEffect" value="stun"/>
+	</attack> 
+    </attacks>
+	<defenses armor="27" defense="159">
+		<defense name="haste" chance="35" interval="5000">
+		</defense>
+		<defense name="healing" interval="13000" chance="60" min="20000" max="25000">
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</defense>
+                <defense name="remove wall" chance="100" interval="1000">
+		</defense>
+	</defenses>
+	<elements>
+	</elements>
+	<immunities>
+		<immunity lifedrain="1"/>
+		<immunity paralyze="1"/>
+		<immunity invisible="1"/>
+	</immunities>
+	<voices interval="1000" chance="5">
+		<voice sentence="You'll have to go back to where it came from, because you maybe have to try to move it away." yell="1"/>
+		<voice sentence="Then we will fight!" yell="1"/>
+	</voices>
+    <loot>
+      <item id="2160" countmax="10" chance1="100000" chancemax="0"/>
+      <item id="2147" countmax="15" chance1="100000" chancemax="0"/>
+      <item id="1949" chance="1500"/>
+      <item id="1996" chance="1500">
+        <inside>
+          <item id="2471" chance="1000"/> --Magic Golden Helmet
+          <item id="13589" chance="1000"/> --Magic Golden Armor
+          <item id="13598" chance="1000"/> --Magic Golden Legs
+          <item id="13575" chance="1000"/> --Magic Golden Boots
+          <item id="13544" chance="1000"/> --divine Sword
+          <item id="13608" chance="1000"/> --iron gloves
+		  <item id="14866" chance="1000"/> --magic golden cloak
+        </inside>
+      </item>
+    </loot>
+</monster>

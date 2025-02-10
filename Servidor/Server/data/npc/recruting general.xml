@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+<npc name="  General" script="Rook/cartoon.lua" access="3">
+	<health now="1000" max="1000"/>
+	<look type="134" head="20" body="114" legs="115" feet="116" addons="3" corpse="3128"/>
+</npc>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Dark Wisdow" nameDescription="a dark wisdow" race="venom" experience="240000" speed="290" manacost="0">
+	<health now="262500" max="262500"/>
+  <look type="38" head="0" body="0" legs="0" feet="0" corpse="2857"/>
+	<targetchange interval="2000" chance="15"/>
+	<targetstrategies nearest="70" health="10" damage="10" random="10"/>
+	<flags>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag summonable="0"/>
+		<flag convinceable="0"/>
+		<flag illusionable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="70"/>
+		<flag runonhealth="0"/>
+	</flags>
+<script>
+        <event name="criticalHitSystemHP"/>
+    </script>
+	<attacks>
+			<attack name="melee" interval="2000" min="-1750" max="-2500"/>
+            <attack name="poison storm monsters" interval="7000" chance="60" min="-1250" max="-1750"/>
+			<attack name="physical" interval="3000" chance="25" range="1" min="-3500" max="-5000">
+				<attribute key="areaEffect" value="stun"/>
+			</attack>
+		<attack name="poisonfield" interval="5300" chance="50" range="7" target="1">
+			<attribute key="shootEffect" value="poison"/>
+		</attack>
+	</attacks>
+	<defenses armor="27" defense="159">
+		<defense name="haste" chance="35" interval="5000">
+		</defense>
+	</defenses>
+	<elements>
+	</elements>
+	<immunities>
+		<immunity lifedrain="1"/>
+		<immunity paralyze="1"/>
+		<immunity invisible="1"/>
+	</immunities>
+	<voices interval="1000" chance="5">
+		<voice sentence="MIIIIIIHLLLL!" yell="1"/>
+		<voice sentence="NHEEEE!" yell="1"/>
+	</voices>
+     <loot>
+      <item id="2152" countmax="50" chance1="100000" chancemax="0"/>
+      <item id="2152" countmax="80" chance1="100000" chancemax="0"/>
+      <item id="2789" countmax="10" chance1="100000" chancemax="0"/>
+      <item id="5812" chance="1500"/>
+      <item id="2169" chance="1500"/>
+      <item id="1991" chance="1500">
+        <inside>
+          <item id="13534" chance="1500"/>
+          <item id="13566" chance="1500"/>
+          <item id="2443" chance="1500"/>
+          <item id="2444" chance="1500"/>
+		  <item id="13515" chance="1500"/>
+        </inside>
+      </item>
+    </loot>
+</monster>

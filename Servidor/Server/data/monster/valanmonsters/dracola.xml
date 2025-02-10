@@ -1,0 +1,66 @@
+<?xml version="1.0"?>
+<monster name="Dracola" nameDescription="a dracola" race="undead" experience="50000" speed="320" manacost="0">
+	<health now="35000" max="35000"/>
+	<look type="231" head="20" body="30" legs="40" feet="50" corpse="6307"/>
+  <targetchange interval="2000" chance="15"/>
+  <strategy attack="100" defense="0"/>
+  <flags>
+    <flag summonable="0"/>
+    <flag attackable="1"/>
+    <flag hostile="1"/>
+    <flag illusionable="0"/>
+    <flag convinceable="0"/>
+    <flag pushable="0"/>
+    <flag canpushitems="1"/>
+    <flag staticattack="90"/>
+    <flag lightlevel="0"/>
+    <flag lightcolor="0"/>
+    <flag targetdistance="1"/>
+    <flag runonhealth="0"/>
+  </flags>
+<script>
+        <event name="criticalHitSystemHP"/>
+    </script>
+  <attacks>
+    <attack name="melee" interval="2000" min="-500" max="-1000"/>
+    <attack name="frost smokewave" interval="3700" chance="45" min="-0" max="-0"/>
+    <attack name="hydra poisonwave" interval="3200" min="-300" max="-1400" chance="25"/>
+    <attack name="udlifewave" interval="4200" min="-600" max="-1100" chance="25"/>
+    <attack name="blood gfb" interval="2500" min="-600" max="-800" chance="20"/>
+    <attack name="poison gfb" interval="5500" chance="40" min="-300" max="-800"/>
+    <attack name="sd monsters" interval="3900" chance="40" min="-0" max="-1000"/>
+    <attack name="poison spit" interval="5900" chance="30" min="-100" max="-400"/>
+  </attacks>
+  <defenses armor="30" defense="15">
+    <defense name="Ultimate Healing" interval="4300" chance="35" min="600" max="1100"/>
+  </defenses>
+  <immunities>
+      <immunity lifedrain="1"/>
+      <immunity paralyze="1"/>
+      <immunity invisible="1"/>
+    </immunities>
+    <voices interval="2000" chance="5">
+    <voice sentence="GRRRRSHHH!"/>
+  </voices>
+  <loot>
+        <item id="6546" chance="100000"/>
+    <item id="2148" countmax="100" chance1="100000" chancemax="0"/>
+	<item id="2148" countmax="100" chance1="100000" chancemax="0"/>
+	<item id="2152" countmax="61" chance1="70000" chancemax="0"/>
+    <item id="2547" countmax="3" chance1="10000" chancemax="0"/>
+    <item id="2236" chance="20000"/>
+	<item id="2260" chance="9000"/>
+	<item id="2230" chance="30000"/>
+	<item id="5944" chance="1000"/>
+	<item id="2498" chance="3000"/>
+	<item id="6300" chance="3000"/>
+	<item id="1987" chance="100000">
+      <inside>
+        <item id="2413" chance="10000"/>
+        <item id="7430" chance="5000"/>
+        <item id="2476" chance="5000"/>
+      </inside>
+    </item>
+  </loot>
+
+</monster>

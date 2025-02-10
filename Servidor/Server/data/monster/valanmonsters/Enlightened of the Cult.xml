@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Enlightened of the Cult" nameDescription="a enlightened of the cult" race="blood" experience="500" speed="180" manacost="0">
+  <health now="700" max="700"/>
+  <look type="193" head="0" body="0" legs="0" feet="0" corpse="3128"/>
+ <targetchange interval="2000" chance="15"/>
+  <strategy attack="100" defense="0"/>
+  <flags>
+    <flag summonable="0"/>
+    <flag attackable="1"/>
+    <flag hostile="1"/>
+    <flag illusionable="0"/>
+    <flag convinceable="0"/>
+    <flag pushable="0"/>
+    <flag canpushitems="1"/>
+    <flag staticattack="50"/>
+    <flag lightlevel="0"/>
+    <flag lightcolor="0"/>
+    <flag targetdistance="4"/>
+    <flag runonhealth="0"/>
+  </flags>
+<script>
+        <event name="criticalHitSystemHP"/>
+    </script>
+    <attacks>
+    <attack name="melee" interval="2000" min="-20" max="-50"/>
+    <attack name="life drain" range="1" interval="3000" chance="65" min="-100" max="-200"/>
+    <attack name="paralyze" interval="6000" chance="55" min="-10" max="-20"/>
+    <attack name="drunk" interval="4500" chance="30" min="-350" max="-450"/>
+  </attacks>
+  <defenses armor="15" defense="20">
+    <defense name="invisible" interval="5000" chance="50"/>
+    <defense name="Ultimate Healing" interval="4000" chance="45" min="150" max="250"/>
+  </defenses>
+  <immunities>
+      <immunity lifedrain="1"/>
+      <immunity paralyze="1"/>
+      <immunity invisible="1"/>
+    </immunities>
+<summons maxSummons="2">
+      <summon name="Crypt Shambler" interval="4000" chance="40"/>
+<summon name="Ghost" interval="4000" chance="40"/>
+    </summons>
+    <voices interval="2000" chance="10">
+    <voice sentence="Praise to my master Urgith!"/>
+  </voices>
+  <loot>
+    <item id="2148" countmax="82" chance1="47831" chancemax="1032"/>
+	<item id="2146" countmax="2" chance1="3831" chancemax="1032"/>
+    <item id="2654" chance="14826"/>
+    <item id="2656" chance="2592"/>
+	<item id="5801" chance="1592"/>
+	<item id="2171" chance="2592"/>
+	<item id="2114" chance="1000"/>
+	<item id="2167" chance="2592"/>
+	    <item id="1987" chance="16666">
+      <inside>
+        <item id="2436" chance="1500"/>
+        <item id="2187" chance="4000"/>
+		<item id="5810" chance="500"/>
+      </inside>
+    </item>
+  </loot>
+</monster>

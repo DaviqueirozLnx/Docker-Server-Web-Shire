@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="King Kong" nameDescription="a King Kong" race="blood" experience="3250" speed="360" manacost="0">
+  <health now="3400" max="3400"/>
+  <look type="116" head="0" body="0" legs="0" feet="0" corpse="4268"/>
+  <targetchange interval="2000" chance="15"/>
+  <strategy attack="100" defense="0"/>
+  <flags>
+    <flag summonable="0"/>
+    <flag attackable="1"/>
+    <flag hostile="1"/>
+    <flag illusionable="0"/>
+    <flag convinceable="0"/>
+    <flag pushable="0"/>
+    <flag canpushitems="0"/>
+    <flag staticattack="80"/>
+    <flag lightlevel="0"/>
+    <flag lightcolor="0"/>
+    <flag targetdistance="1"/>
+    <flag runonhealth="0"/>
+  </flags>
+<script>
+        <event name="criticalHitSystemHP"/>
+    </script>
+  <attacks>
+    <attack name="melee" interval="2000" min="-400" max="-650"/>
+	<attack name="emorragia" range="1" interval="2000" chance="1" min="-800" max="-1300"/>
+	<attack name="large rock" interval="2500" chance="45" min="-150" max="-210"/>
+  </attacks>
+  <defenses armor="44" defense="42">
+    <defense name="haste" interval="6000" chance="40"/>
+  </defenses>
+  <immunities>
+    <immunity physical="0"/>
+    <immunity energy="0"/>
+    <immunity fire="0"/>
+    <immunity poison="0"/>
+    <immunity lifedrain="0"/>
+    <immunity paralyze="1"/>
+    <immunity outfit="0"/>
+    <immunity drunk="1"/>
+    <immunity invisible="1"/>
+  </immunities>
+  <voices interval="2000" chance="5">
+    <voice sentence="Huarrrrrrrrrrrrrrrrrrrrrgh!"/>
+    <voice sentence="Ungaaah! Ungaaaaaah!!!"/>
+  </voices>
+  <loot>
+    <item id="2148" countmax="100" chance1="100000" chancemax="0"/>
+    <item id="2678" countmax="15" chance1="25000" chancemax="0"/>
+    <item id="2676" countmax="15" chance1="25000" chancemax="0"/>
+    <item id="2476" chance="10000"/>
+    <item id="2477" chance="5000"/>
+    <item id="5883" chance="100000"/>
+	<item id="1987" chance="100000">
+  <inside>
+	<item id="2430" chance="5000"/>//K-axe
+    <item id="2519" chance="4000"/>//crown shield
+    <item id="2392" chance="5000"/>//fire sword
+    <item id="2491" chance="10000"/>//c helmet
+    <item id="2393" chance="3333"/>//D Lance
+    <item id="2414" chance="3333"/>//GS
+  </inside>
+  </item>
+  </loot>
+</monster>

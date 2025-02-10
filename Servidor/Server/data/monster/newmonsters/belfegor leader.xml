@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <monster name="Belfegor Leader" species="fire" nameDescription="a belfegor leader" race="blood" experience="1000000" speed="360" manacost="0">
+    <health now="2000000" max="2000000"/>
+    <look type="486" head="20" body="30" legs="40" feet="50" corpse="6068"/>
+    <targetchange interval="2000" chance="15"/>
+    <strategy attack="100" defense="0"/>
+    <flags>
+      <flag summonable="0"/>
+      <flag attackable="1"/>
+      <flag hostile="1"/>
+      <flag illusionable="0"/>
+      <flag convinceable="0"/>
+      <flag pushable="0"/>
+      <flag canpushitems="1"/>
+      <flag staticattack="10"/>
+      <flag lightlevel="0"/>
+      <flag lightcolor="0"/>
+      <flag targetdistance="1"/>
+      <flag runonhealth="0"/>
+    </flags>
+<script>
+        <event name="criticalHitSystemHP"/>
+    </script>
+    <attacks>
+       <attack name="melee" interval="2000" min="-7000" max="-7500"/>
+	   <attack name="physical" interval="3000" chance="30" range="1" min="-9000" max="-10000"> 
+				<attribute key="areaEffect" value="stun"/>
+			</attack> 
+      <attack name="fogo normal" interval="12000" chance="100" min="-10000" max="-11500"/>
+      <attack name="heavy magic missile multiplo" interval="3000" chance="40" min="-3000" max="-4005"/>
+      <attack name="dragon firewave" interval="6000" chance="50" min="-15550" max="-17650"/>
+      <attack name="fire red gfb multiplo" interval="8000" chance="50" min="-11500" max="-13000"/>
+      <attack name="fire rain"  interval="10000" chance="50" min="-8000" max="-9000"/>
+	  <attack name="paralyze" interval="5000" chance="30" min="-500" max="-1300"/>
+	  <attack name="poff2" interval="12000" chance="100" min="-2" max="-2"/>
+	  <attack name="poff2" interval="8000" chance="50" min="-2" max="-2"/>
+    </attacks>
+    <defenses armor="40" defense="40">
+	<defense name="healing" interval="13000" chance="30" min="25000" max="35000">
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</defense>
+	<defense name="remove wall" chance="100" interval="1000">
+		</defense>
+    </defenses>
+    <immunities>
+      <immunity lifedrain="1"/>
+      <immunity paralyze="1"/>
+      <immunity drunk="1"/>
+      <immunity invisible="1"/>
+    </immunities>
+    <loot>
+      <item id="2160" countmax="5" chance1="100000" chancemax="0"/>
+	<item id="14580" chance="3500"/>
+      <item id="2353" chance="2500"/>     
+      <item id="1993" chance="100000">
+      <inside>
+          <item id="13550" chance="450"/>
+          <item id="13546" chance="550"/>
+          <item id="13565" chance="700"/>
+          <item id="13527" chance="450"/>
+          <item id="13607" chance="450"/>
+          <item id="13572" chance="500"/>
+          <item id="13510" chance="520"/>
+	  <item id="2142" chance="850"/>
+	</inside>
+      </item>
+    </loot>
+  </monster>

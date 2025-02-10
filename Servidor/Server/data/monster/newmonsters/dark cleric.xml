@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Dark Cleric" nameDescription="a dark cleric" race="blood" experience="70000" speed="290" manacost="0">
+	<health now="112500" max="112500"/>
+    <look type="148" head="96" body="97" legs="96" feet="97" addons="3" corpse="3128"/>
+	<targetchange interval="2000" chance="15"/>
+	<targetstrategies nearest="70" health="10" damage="10" random="10"/>
+	<flags>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag summonable="0"/>
+		<flag convinceable="0"/>
+		<flag illusionable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="70"/>
+		<flag runonhealth="0"/>
+	</flags>
+<script>
+        <event name="criticalHitSystemHP"/>
+    </script>
+	<attacks>
+			<attack name="melee" interval="2000" min="-1250" max="-1750"/>
+			<attack name="paralyze" interval="5500" chance="30" range="7" min="-30" max="-30"/>
+			<attack name="physical" interval="3000" chance="25" range="1" min="-2000" max="-3000">
+				<attribute key="areaEffect" value="stun"/>
+			</attack>
+			<attack name="sd monsters"  interval="5000" chance="70" range="7" min="-1000" max="-1250"/>
+			<attack name="drunk" interval="4000" chance="30" range="6" duration="8000" min="-15" max="-15">
+			<attribute key="areaEffect" value="rednote"/>
+			</attack>
+	</attacks>
+	<defenses armor="27" defense="159">
+		<defense name="haste" chance="70" interval="5000">
+		</defense>
+	</defenses>
+	<elements>
+	</elements>
+	<immunities>
+		<immunity lifedrain="1"/>
+		<immunity paralyze="1"/>
+		<immunity invisible="1"/>
+	</immunities>
+	<voices interval="1000" chance="5">
+		<voice sentence="Your energy is mine." yell="1"/>
+		<voice sentence="Now your life has come to the end, hahahaha!" yell="1"/>
+	</voices>
+    <loot>
+      <item id="2152" countmax="50" chance1="100000" chancemax="0"/>
+      <item id="2152" countmax="80" chance1="100000" chancemax="0"/>
+      <item id="2789" countmax="10" chance1="100000" chancemax="0"/>
+      <item id="2031" chance="3000"/>
+      <item id="2070" chance="2500"/>
+      <item id="2167" chance="2000"/>
+      <item id="2436" chance="2500"/>
+      <item id="2126" chance="1500"/>
+      <item id="13566" chance="1000"/>
+      <item id="13563" chance="1000"/>
+      <item id="7390" chance="1500"/>
+      <item id="3939" chance="1500">
+        <inside>
+          <item id="13552" chance="1500"/> --Mind Helmet
+	  <item id="2129" chance="2000"/>
+          <item id="2453" chance="2000"/> --Arcane Wand
+          <item id="7426" chance="1500"/> --Mind Wand
+          <item id="13591" chance="1500"/> --Mind Robe
+          <item id="2505" chance="1500"/> --Elven Armor
+          <item id="13531" chance="1500"/> --Elven Crossbow
+          <item id="2506" chance="1500"/> --Elven Helmet
+        </inside>
+      </item>
+    </loot>
+</monster>

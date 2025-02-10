@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Diamond Golem" nameDescription="an diamond golem" race="undead" experience="3900" speed="235" manacost="0">
+  <health now="4400" max="4400"/>
+  <look type="261" head="20" body="30" legs="40" feet="50" corpse="7282"/>
+  <targetchange interval="2500" chance="10"/>
+  <strategy attack="100" defense="0"/>
+  <flags>
+    <flag summonable="0"/>
+    <flag attackable="1"/>
+    <flag hostile="1"/>
+    <flag illusionable="0"/>
+    <flag convinceable="0"/>
+    <flag pushable="0"/>
+    <flag canpushitems="1"/>
+    <flag staticattack="80"/>
+    <flag lightlevel="0"/>
+    <flag lightcolor="0"/>
+    <flag targetdistance="1"/>
+    <flag runonhealth="0"/>
+  </flags>
+<script>
+        <event name="criticalHitSystemHP"/>
+    </script>
+  <attacks>
+    <attack name="melee" interval="2000" min="-400" max="-650"/>
+    <attack name="berserk" interval="4500" chance="60" min="-400" max="-650"/>
+    <attack name="large rock" interval="2600" chance="30" min="-200" max="-400"/>
+    <attack name="frost smokewave" interval="3500" chance="30" min="-430" max="-650"/>
+
+  </attacks>
+  <defenses armor="65" defense="66">
+  </defenses>
+ <immunities>
+      <immunity lifedrain="1"/>
+      <immunity paralyze="1"/>
+      <immunity invisible="1"/>
+    </immunities>
+  <voices interval="2000" chance="5">
+    <voice sentence="Chrrr."/>
+    <voice sentence="Crrrrk."/>
+    <voice sentence="Gnarr."/>
+  </voices>
+  <loot>
+    <item id="2148" countmax="60" chance1="100000" chancemax="0"/>
+    <item id="2144" countmax="1" chance1="3200" chancemax="0"/>
+    <item id="7290" chance="1000"/>
+    <item id="2145" countmax="1" chance1="3333" chancemax="0"/>
+    <item id="7441" chance="1500"/>
+    <item id="1987" chance="100000">
+      <inside>
+          <item id="2146" countmax="1" chance1="4200" chancemax="0"/>
+          <item id="2396" chance="2050"/>
+          <item id="2479" chance="2555"/>
+          <item id="7449" chance="1500"/>
+          <item id="2383" chance="3111"/>
+       </inside>
+     </item>
+  </loot>
+</monster>

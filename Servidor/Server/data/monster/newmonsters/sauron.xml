@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Sauron" nameDescription="a sauron" race="undead" experience="1200000" speed="500" manacost="0" skull="black">
+	<health now="3750000" max="3750000"/>
+    <look type="308" head="0" body="95" legs="0" feet="94" corpse="3128"/>
+	<targetchange interval="2000" chance="15"/>
+	<targetstrategies nearest="70" health="10" damage="10" random="10"/>
+	<flags>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag summonable="0"/>
+		<flag convinceable="0"/>
+		<flag illusionable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="70"/>
+		<flag runonhealth="0"/>
+	</flags>
+<script>
+        <event name="criticalHitSystemHP"/>
+    </script>
+    <attacks>
+      <attack name="melee" interval="2000" min="-15000" max="-20000"/>
+      <attack name="berserk monsters" interval="2500" chance="20" min="-15000" max="-20000"/>
+      <attack name="Tides Of Darkness" interval="7000" chance="30" min="-25000" max="-40000"/>
+      <attack name="Earthquake monsters" interval="2000" chance="20" min="-10000" max="-20000"/>
+	  <attack name="paralyze" interval="6000" chance="50" min="-10" max="-20"/>
+    </attacks>
+	<defenses armor="27" defense="159">
+		      <defense name="speed" interval="10000" chance="50" speedchange="600" duration="10000">
+        <attribute key="areaEffect" value="greenshimmer"/>
+      </defense>
+		<defense name="healing" interval="13000" chance="60" min="50000" max="70000">
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</defense>
+                <defense name="remove wall" chance="100" interval="1000">
+		</defense>
+	</defenses>
+	<elements>
+	</elements>
+	<immunities>
+		<immunity lifedrain="1"/>
+		<immunity paralyze="1"/>
+		<immunity invisible="1"/>
+	</immunities>
+	<summons maxSummons="2">
+      <summon name="Uruk-Hai" interval="2000" chance="90"/>
+    </summons>
+	<voices interval="1000" chance="5">
+		<voice sentence="I am Sauron the king of world!" yell="1"/>
+		<voice sentence="Come back to the rook bastard!!!" yell="1"/>
+	</voices>
+    <loot>
+      <item id="13685" countmax="10" chance1="100000" chancemax="0"/>
+      <item id="7242" chance="100000"/>
+      <item id="13559" chance="300"/>
+      <item id="13586" chance="300"/>
+      <item id="13600" chance="300"/>
+	  <item id="13538" chance="450"/>
+      <item id="13511" chance="450"/>
+      <item id="13522" chance="450"/>
+      <item id="1996" chance="1500">
+        <inside>
+          <item id="13491" chance="500"/>
+		  <item id="13528" chance="500"/>
+		  <item id="13535" chance="500"/>
+		  <item id="13541" chance="500"/>
+		  <item id="13508" chance="500"/>
+	      <item id="2139" chance="625"/>
+        </inside>
+      </item>
+    </loot>
+</monster>

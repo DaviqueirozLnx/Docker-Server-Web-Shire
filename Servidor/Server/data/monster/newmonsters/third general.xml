@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Third General" nameDescription="a third general" race="blood" experience="300000" speed="450" manacost="0" skull="black">
+	<health now="750000" max="750000"/>
+    <look type="301" head="0" body="95" legs="0" feet="94" corpse="3129"/>
+	<targetchange interval="2000" chance="15"/>
+	<targetstrategies nearest="70" health="10" damage="10" random="10"/>
+	<flags>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag summonable="0"/>
+		<flag convinceable="0"/>
+		<flag illusionable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="70"/>
+		<flag runonhealth="0"/>
+	</flags>
+<script>
+        <event name="criticalHitSystemHP"/>
+    </script>
+    <attacks>
+      <attack name="melee" interval="2000" min="-2500" max="-3500"/>
+      <attack name="spear" interval="2500" chance="80" min="-3000" max="-3500"/>
+      <attack name="sonar" interval="3500" chance="60" min="-4000" max="-5000"/>
+    </attacks>
+	<defenses armor="27" defense="159">
+		<defense name="haste" chance="35" interval="5000">
+		</defense>
+		<defense name="healing" interval="13000" chance="60" min="20000" max="25000">
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</defense>
+                <defense name="remove wall" chance="100" interval="1000">
+		</defense>
+	</defenses>
+	<elements>
+	</elements>
+	<immunities>
+		<immunity lifedrain="1"/>
+		<immunity paralyze="1"/>
+		<immunity invisible="1"/>
+	</immunities>
+	<voices interval="1000" chance="5">
+		<voice sentence="Give human as I am not so weak and dunnky Agrie!" yell="1"/>
+		<voice sentence="What the motivation to reach this point? the why? what your goal, winning imperrios the lord Sauron?" yell="1"/>
+	</voices>
+    <loot>
+      <item id="2160" countmax="20" chance1="100000" chancemax="0"/>
+	  <item id="13555" chance="700"/>
+	  <item id="14857" chance="700"/>
+	  <item id="13584" chance="700"/>
+      <item id="13602" chance="700"/>
+      <item id="3940" chance="1500">
+        <inside>
+          <item id="13544" chance="1500"/>
+		  <item id="13581" chance="1500"/>
+		  <item id="13556" chance="1500"/> 
+		  <item id="14865" chance="1500"/>
+          <item id="13530" chance="1200"/> 
+          <item id="13608" chance="1200"/> 
+</inside>
+      </item>
+    </loot>
+</monster>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<npc name="Riona" script="default.lua" walkinterval="0" floorchange="0" >
+	<health now="100" max="100" />
+	<look type="138" head="57" body="59" legs="40" feet="76" addons="0" />
+	<parameters>
+		<!--MESSAGES-->
+		<parameter key="message_greet" value="Saudacoes, |PLAYERNAME|."/>
+		<parameter key="message_farewell" value="Saudacoes, |PLAYERNAME|."/>
+		<parameter key="message_buy" value="Deseja comprar |ITEMCOUNT| |NOME DO ITEM| para |TOTALCOST| moedas de ouro?"/>
+		<parameter key="message_onbuy" value="Olha VocÃª aqui."/>
+		<parameter key="message_bought" value="Comprou |ITEMCOUNT|x |ITEMNAME| para |TOTALCOST| ouro"/>
+		<parameter key="message_sell" value="Quer vender |ITEMCOUNT| |NOME DO ITEM| para |TOTALCOST| moedas de ouro?"/>
+		<parameter key="message_onsell" value="Aqui estÃ¡, |TOTALCOST| ouro."/>
+		<parameter key="message_sold" value="Vendido |ITEMCOUNT|x |ITEMNAME| para |TOTALCOST| ouro."/>
+		<parameter key="message_missingmoney" value="VocÃª nÃ£o tem pontos suficiente. "/>
+		<parameter key="message_needmoney" value="VocÃª nÃ£o tem pontos suficiente."/>
+		<parameter key="message_missingitem" value="VocÃª nÃ£o tem tantos."/>
+		<parameter key="message_needitem" value="VocÃª nÃ£o tem este objeto."/>
+		<parameter key="message_needspace" value="VocÃª nÃ£o tem capacidade suficiente."/>
+		<parameter key="message_needmorespace" value="VocÃª nÃ£o tem capacidade suficiente para todos os itens."/>
+		<parameter key="message_idletimeout" value="Adeus."/>
+		<parameter key="message_decline" value="EntÃ£o nÃ£o."/>
+		<parameter key="message_sendtrade" value="Claro, basta navegar pelos meus produtos."/>
+		<parameter key="message_noshop" value=""/>
+		<parameter key="message_oncloseshop" value="Obrigado, volte sempre que precisar de algo mais."/>
+		<parameter key="message_alreadyfocused" value="|PLAYERNAME|, Eu jÃ¡ estou falando com vocÃª."/>
+		<parameter key="message_walkaway_male" value="AtÃ© mais, |PLAYERNAME|."/>
+		<parameter key="message_walkaway_female" value="AtÃ© mais, |PLAYERNAME|."/>
+	</parameters>
+</npc>

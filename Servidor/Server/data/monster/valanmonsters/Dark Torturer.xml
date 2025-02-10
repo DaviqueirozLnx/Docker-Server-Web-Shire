@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Dark Torturer" nameDescription="a Dark Torturer" race="undead" experience="5500" speed="290" manacost="0">
+	<health now="7350" max="7350"/>
+	<look type="234" head="20" body="30" legs="40" feet="50" corpse="6328"/>
+  <targetchange interval="2000" chance="15"/>
+  <strategy attack="100" defense="0"/>
+  <flags>
+    <flag summonable="0"/>
+    <flag attackable="1"/>
+    <flag hostile="1"/>
+    <flag illusionable="0"/>
+    <flag convinceable="0"/>
+    <flag pushable="0"/>
+    <flag canpushitems="1"/>
+    <flag staticattack="90"/>
+    <flag lightlevel="0"/>
+    <flag lightcolor="0"/>
+    <flag targetdistance="1"/>
+    <flag runonhealth="0"/>
+  </flags>
+<script>
+        <event name="criticalHitSystemHP"/>
+    </script>
+  <attacks>
+    <attack name="melee" interval="2000" min="-350" max="-650"/>
+	<attack name="throwing knife" interval="4200" chance="60" min="-400" max="-700"/>
+    <attack name="sonar" interval="3600" chance="70" min="-0" max="-0"/>
+  </attacks>
+  <defenses armor="30" defense="15">
+  </defenses>
+ <immunities>
+      <immunity lifedrain="1"/>
+      <immunity paralyze="1"/>
+      <immunity invisible="1"/>
+    </immunities>
+    <voices interval="2000" chance="5">
+    <voice sentence="You like it, don't you?"/>
+	<voice sentence="IahaEhheAie!"/>
+  </voices>
+  <loot>
+    <item id="2148" countmax="100" chance1="100000" chancemax="0"/>
+	<item id="2152" countmax="4" chance1="50000" chancemax="0"/>
+    <item id="2671" countmax="5" chance1="20000" chancemax="0"/>
+    <item id="5801" chance="2000"/>
+	<item id="14999" chance="1000"/>
+	<item id="6492" chance="2000"/>
+	<item id="5944" chance="1000"/>
+	<item id="1987" chance="100000">
+      <inside>
+        <item id="2513" chance="7000"/>
+        <item id="2558" chance="4000"/>
+        <item id="2470" chance="2000"/>
+        <item id="6300" chance="1500"/>
+		<item id="5480" chance="1000"/>
+		<item id="7388" chance="1000"/>
+      </inside>
+    </item>
+  </loot>
+
+</monster>

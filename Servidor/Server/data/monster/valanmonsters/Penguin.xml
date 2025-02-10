@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Penguin" nameDescription="a penguin" race="blood" experience="1" speed="156" manacost="290">
+  <health now="33" max="33"/>
+  <look type="250" head="20" body="30" legs="40" feet="50" corpse="7334"/>
+ <targetchange interval="2000" chance="15"/>
+  <strategy attack="100" defense="0"/>
+  <flags>
+    <flag summonable="1"/>
+    <flag attackable="1"/>
+    <flag hostile="1"/>
+    <flag illusionable="1"/>
+    <flag convinceable="1"/>
+    <flag pushable="1"/>
+    <flag canpushitems="0"/>
+    <flag staticattack="60"/>
+    <flag lightlevel="0"/>
+    <flag lightcolor="0"/>
+    <flag targetdistance="1"/>
+    <flag runonhealth="32"/>
+  </flags>
+<script>
+        <event name="criticalHitSystemHP"/>
+    </script>
+  <attacks>
+    <attack name="melee" interval="2000" min="-1" max="-3"/>
+  </attacks>
+  <defenses armor="1" defense="4"/>
+  <immunities>
+      <immunity lifedrain="1"/>
+      <immunity paralyze="1"/>
+      <immunity invisible="1"/>
+    </immunities>
+  <loot>
+    <item id="2667" countmax="2" chance1="65000" chancemax="0"/>
+    <item id="7159" countmax="1" chance1="2111" chancemax="0"/>
+    <item id="7158" countmax="1" chance1="2222" chancemax="0"/>
+    <item id="2669" countmax="1" chance1="2222" chancemax="0"/>
+  </loot>
+</monster>

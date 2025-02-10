@@ -1,0 +1,4 @@
+<?xml version="1.0"?>
+<npc name="Anoriel" script="anoriel.lua"  walkinterval="0" floorchange="0" access="5" level="1" maglevel="1">
+    <look type="130" head="0" body="0" legs="0" feet="0" addons="1" corpse="3128"/>
+</npc>

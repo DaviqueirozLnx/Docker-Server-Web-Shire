@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+<npc name="Camiros" script="valanen.lua" access="3" walkinterval="0"  lookdir="1">
+	<health now="1000" max="1000"/>
+	<look type="132" head="0" body="67" legs="86" feet="85" addons="0" corpse="3128"/>
+</npc>

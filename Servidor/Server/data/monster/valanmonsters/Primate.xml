@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Primate" nameDescription="a primate" race="blood" experience="3500" speed="260" manacost="0">
+  <health now="4000" max="4000"/>
+  <look type="153" head="0" body="95" legs="95" feet="1" addons="0" corpse="3128"/>
+  <targetchange interval="2000" chance="10"/>
+  <strategy attack="100" defense="0"/>
+  <flags>
+    <flag summonable="0"/>
+    <flag attackable="1"/>
+    <flag hostile="1"/>
+    <flag illusionable="0"/>
+    <flag convinceable="0"/>
+    <flag pushable="0"/>
+    <flag canpushitems="1"/>
+    <flag staticattack="70"/>
+    <flag lightlevel="0"/>
+    <flag lightcolor="0"/>
+    <flag targetdistance="1"/>
+    <flag runonhealth="500"/>
+  </flags>
+<script>
+        <event name="criticalHitSystemHP"/>
+    </script>
+  <attacks>
+    <attack name="melee" interval="2000" min="-300" max="-550"/>
+    <attack name="small stone" interval="3500" chance="45" min="-150" max="-200"/>
+    <attack name="berserk" interval="7600" chance="30" min="-250" max="-450"/>
+  </attacks>
+  <defenses armor="21" defense="23">
+  </defenses>
+  <immunities>
+      <immunity lifedrain="1"/>
+      <immunity paralyze="1"/>
+      <immunity invisible="1"/>
+    </immunities>
+  <voices interval="3000" chance="15">
+    <voice sentence="Zabu Nabuu!"/>
+    <voice sentence="Unnaa Bita Tuu!"/>
+  </voices>
+    <loot>
+      <item id="2149" countmax="1" chance1="80000" chancemax="0"/>
+      <item id="2147" countmax="3" chance1="60000" chancemax="0"/>
+      <item id="2666" countmax="5" chance1="10000" chancemax="0"/>
+      <item id="2476" chance="5000"/>
+      <item id="2477" chance="5000"/>
+      <item id="2381" chance="8500"/>
+      <item id="2461" chance="8500"/>
+      <item id="7457" chance="500"/>
+      <item id="2813" chance="10000"/>
+      <item id="1987" chance="100000">
+        <inside>
+          <item id="2440" chance="5000"/>
+          <item id="5741" chance="2000"/>
+          <item id="2414" chance="2000"/>
+          <item id="3963" chance="2000"/>
+        </inside>
+      </item>
+    </loot>
+</monster>

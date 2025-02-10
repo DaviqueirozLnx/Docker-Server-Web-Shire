@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<npc name="Frederik" script="data/npc/scripts/default.lua" walkinterval="0" speed="100" walkradius="2" floorchange="0">
+	<health max="100" now="100"/>
+	<look type="128" head="114" body="85" legs="78" feet="94" addons="2" mount="0"/>
+	<parameters>
+		<!--MESSAGES-->
+		<parameter key="message_greet" value="Saudações, |PLAYERNAME|."/>
+		<parameter key="message_farewell" value="Saudações, |PLAYERNAME|."/>
+		<parameter key="message_buy" value="Deseja comprar |ITEMCOUNT| |NOME DO ITEM| para |TOTALCOST| moedas de ouro?"/>
+		<parameter key="message_onbuy" value="Olha Você aqui."/>
+		<parameter key="message_bought" value="Comprou |ITEMCOUNT|x |ITEMNAME| para |TOTALCOST| ouro"/>
+		<parameter key="message_sell" value="Quer vender |ITEMCOUNT| |NOME DO ITEM| para |TOTALCOST| moedas de ouro?"/>
+		<parameter key="message_onsell" value="Aqui está, |TOTALCOST| ouro."/>
+		<parameter key="message_sold" value="Vendido |ITEMCOUNT|x |ITEMNAME| para |TOTALCOST| ouro."/>
+		<parameter key="message_missingmoney" value="Você não tem pontos suficiente. "/>
+		<parameter key="message_needmoney" value="Você não tem pontos suficiente."/>
+		<parameter key="message_missingitem" value="Você não tem tantos."/>
+		<parameter key="message_needitem" value="Você não tem este objeto."/>
+		<parameter key="message_needspace" value="Você não tem capacidade suficiente."/>
+		<parameter key="message_needmorespace" value="Você não tem capacidade suficiente para todos os itens."/>
+		<parameter key="message_idletimeout" value="Adeus."/>
+		<parameter key="message_decline" value="Então não."/>
+		<parameter key="message_sendtrade" value="Claro, basta navegar pelos meus produtos."/>
+		<parameter key="message_noshop" value=""/>
+		<parameter key="message_oncloseshop" value="Obrigado, volte sempre que precisar de algo mais."/>
+		<parameter key="message_alreadyfocused" value="|PLAYERNAME|, Eu já estou falando com você."/>
+		<parameter key="message_walkaway_male" value="Até mais, |PLAYERNAME|."/>
+		<parameter key="message_walkaway_female" value="Até mais, |PLAYERNAME|."/>
+	</parameters>
+</npc>

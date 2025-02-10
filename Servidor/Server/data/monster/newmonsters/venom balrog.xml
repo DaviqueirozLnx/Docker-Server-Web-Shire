@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Venom Balrog" nameDescription="a venom balrog" race="venom" experience="220000" speed="330" manacost="0">
+	<health now="412500" max="412500"/>
+    <look type="12" head="0" body="99" legs="0" feet="94" corpse="6068"/>
+	<targetchange interval="2000" chance="15"/>
+	<targetstrategies nearest="70" health="10" damage="10" random="10"/>
+	<flags>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag summonable="0"/>
+		<flag convinceable="0"/>
+		<flag illusionable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="70"/>
+		<flag runonhealth="0"/>
+	</flags>
+<script>
+        <event name="criticalHitSystemHP"/>
+    </script>
+	<attacks>
+	  <attack name="melee" interval="2000" min="-1600" max="-1750"/>
+      <attack name="poison storm monsters" interval="3500" chance="60" min="-2100" max="-2700"/>
+      <attack name="hydra poisonwave" interval="5000" min="-2500" max="-2600" chance="40"/>
+      <attack name="paralyze" interval="5000" min="-50" max="-50" chance="30"/>
+	  <attack name="poison gfb" interval="6500" chance="40" range="7" min="-1600" max="-2500"/>
+	</attacks>
+	<defenses armor="27" defense="159">
+		<defense name="haste" chance="35" interval="5000">
+		</defense>
+	</defenses>
+	<elements>
+	</elements>
+	<immunities>
+		<immunity lifedrain="1"/>
+		<immunity paralyze="1"/>
+		<immunity invisible="1"/>
+	</immunities>
+	<voices interval="1000" chance="5">
+		<voice sentence="Venom!!!" yell="1"/>
+		<voice sentence="Look into your venomside!" yell="1"/>
+	</voices>
+    <loot>
+      <item id="2160" countmax="5" chance1="100000" chancemax="0"/>
+      <item id="2152" countmax="100" chance1="100000" chancemax="0"/>
+      <item id="2789" countmax="15" chance1="10000" chancemax="0"/>
+      <item id="2149" countmax="15" chance1="10000" chancemax="0"/>
+      <item id="2523" chance="1500"/>
+      <item id="2798" chance="1000"/>
+      <item id="2522" chance="1500"/>
+      <item id="1991" chance="1500">
+      <inside>
+          <item id="13587" chance="1500"/> 
+          <item id="13512" chance="1500"/>  
+          <item id="13526" chance="1500"/> 
+          <item id="2469" chance="1500"/> 
+	  <item id="2132" chance="1500"/>
+       </inside>
+     </item>
+    </loot>
+</monster>

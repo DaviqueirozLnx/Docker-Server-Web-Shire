@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Adept of the Cult" nameDescription="a adept of the cult" race="blood" experience="400" speed="180" manacost="0">
+  <health now="430" max="430"/>
+  <look type="194" head="114" body="94" legs="94" feet="57" corpse="6080"/>
+ <targetchange interval="2000" chance="15"/>
+  <strategy attack="100" defense="0"/>
+  <flags>
+    <flag summonable="0"/>
+    <flag attackable="1"/>
+    <flag hostile="1"/>
+    <flag illusionable="0"/>
+    <flag convinceable="0"/>
+    <flag pushable="0"/>
+    <flag canpushitems="1"/>
+    <flag staticattack="50"/>
+    <flag lightlevel="0"/>
+    <flag lightcolor="0"/>
+    <flag targetdistance="1"/>
+    <flag runonhealth="0"/>
+  </flags>
+<script>
+        <event name="criticalHitSystemHP"/>
+    </script>
+  <attacks>
+    <attack name="melee" interval="2000" min="-30" max="-45"/>
+    <attack name="poison spit" interval="3000" chance="80" min="-40" max="-65"/>
+	<attack name="heavy magic missile" interval="4000" chance="30" min="-40" max="-65"/>
+  </attacks>
+  <defenses armor="15" defense="20"/>
+ <immunities>
+      <immunity lifedrain="1"/>
+      <immunity paralyze="1"/>
+      <immunity invisible="1"/>
+    </immunities>
+ <summons maxSummons="2">
+      <summon name="Ghoul" interval="3200" chance="70"/>
+    </summons>
+  <loot>
+    <item id="2148" countmax="47" chance1="40000" chancemax="954"/>
+    <item id="2169" chance="383"/>
+    <item id="5801" chance="489"/>
+    <item id="6087" chance="5639"/>
+  </loot>
+</monster>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Evil Corruption" nameDescription="a evil corruption" race="undead" experience="300000" speed="430" manacost="0">
+  <health now="825000" max="825000"/>
+  <look type="344" head="0" body="95" legs="0" feet="94" corpse="6068"/>
+  <targetchange interval="2000" chance="15"/>
+  <strategy attack="100" defense="0"/>
+  <flags>
+    <flag summonable="0"/>
+    <flag attackable="1"/>
+    <flag hostile="1"/>
+    <flag illusionable="0"/>
+    <flag convinceable="0"/>
+    <flag pushable="0"/>
+    <flag canpushitems="1"/>
+    <flag staticattack="80"/>
+    <flag lightlevel="0"/>
+    <flag lightcolor="0"/>
+    <flag targetdistance="1"/>
+    <flag runonhealth="0"/>
+  </flags>
+<script>
+        <event name="criticalHitSystemHP"/>
+    </script>
+  <attacks>
+    <attack name="melee" interval="1500" min="-5000" max="-6000"/>
+    <attack name="tides of darkness" interval="11000" chance="100" min="-5000" max="-7000"/>
+	<attack name="orshabaal berserk" interval="5000" chance="100" min="-4000" max="-5000"/>
+	<attack name="sonar" interval="9500" chance="50" min="-4000" max="-5000"/>
+	<attack name="paralyze" interval="5200" chance="30" min="-500" max="-1300"/>
+  </attacks>
+  <defenses armor="22" defense="33">
+    <defense name="haste" interval="7200" chance="40"/>
+    <defense name="healing" interval="13000" chance="60" min="10000" max="15000">
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</defense>
+  </defenses>
+  <immunities>
+    <immunity lifedrain="0"/>
+    <immunity paralyze="1"/>
+    <immunity drunk="1"/>
+    <immunity invisible="1"/>
+  </immunities>
+    <loot>
+      <item id="2160" countmax="5" chance="100000"/>
+      <item id="2144" countmax="10" chance="500"/>
+	  <item id="13564" chance="500"/>
+	  <item id="14992" chance="800"/>
+	  <item id="13574" chance="500"/>
+      <item id="1996" chance="1500">
+      <inside>
+          <item id="13581" chance="1500"/>
+          <item id="13556" chance="1500"/>
+		  <item id="13517" chance="1500"/>
+		  <item id="13545" chance="1500"/>
+		  <item id="13512" chance="1500"/>
+		  <item id="13540" chance="1500"/>
+		  <item id="7411" chance="1500"/>
+		  <item id="14865" chance="1500"/>
+		  <item id="13501" chance="1500"/>
+	  <item id="2136" chance="1500"/>
+        </inside>
+       </item>
+    </loot>
+</monster>

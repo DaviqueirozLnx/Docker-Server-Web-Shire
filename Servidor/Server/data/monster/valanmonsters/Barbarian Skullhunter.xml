@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Barbarian Skullhunter" nameDescription="a barbarian skullhunter" race="blood" experience="170" speed="180" manacost="550">
+  <health now="270" max="270"/>
+  <look type="254" head="0" body="94" legs="94" feet="114" corpse="3128"/>
+ <targetchange interval="2000" chance="15"/>
+  <strategy attack="100" defense="0"/>
+  <flags>
+    <flag summonable="0"/>
+    <flag attackable="1"/>
+    <flag hostile="1"/>
+    <flag illusionable="1"/>
+    <flag convinceable="1"/>
+    <flag pushable="0"/>
+    <flag canpushitems="1"/>
+    <flag staticattack="100"/>
+    <flag lightlevel="0"/>
+    <flag lightcolor="0"/>
+    <flag targetdistance="1"/>
+    <flag runonhealth="0"/>
+  </flags>
+<script>
+        <event name="criticalHitSystemHP"/>
+    </script>
+  <attacks>
+    <attack name="melee" interval="2000" min="-60" max="-130"/>
+  </attacks>
+  <defenses armor="19" defense="20"/>
+  <immunities>
+      <immunity lifedrain="1"/>
+      <immunity paralyze="1"/>
+      <immunity invisible="1"/>
+    </immunities>
+  <voices interval="2000" chance="5">
+    <voice sentence="You will become my trophy!"/>
+    <voice sentence="Fight harder, coward!"/>
+    <voice sentence="Show that you are a worthy opponent."/>
+  </voices>
+  <loot>
+    <item id="2148" countmax="30" chance1="100000" chancemax="0"/>
+    <item id="2460" chance="6666"/>
+    <item id="7449" chance="777"/>
+    <item id="1987" chance="100000">
+        <inside>
+           <item id="2050" chance="11111"/>
+           <item id="7462" chance="888"/>
+           <item id="2168" chance="1333"/>
+        </inside>
+     </item>
+  </loot>
+</monster>

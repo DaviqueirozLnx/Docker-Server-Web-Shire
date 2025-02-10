@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<npc name="Eryn" script="runes.lua" walkinterval="0" floorchange="0">
+	<health now="100" max="100" />
+	<look type="130" head="39" body="122" legs="125" feet="57" addons="0" />
+	<parameters>
+		<parameter key="module_shop" value="1" />
+		<parameter key="message_greet" value="Hello |PLAYERNAME|, Me can make good items from items me need." />
+		<parameter key="shop_buyable" value="obsidian knife,5908,10000." />
+		<parameter key="shop_buyable" value="spool of yarn,5886,20000." />
+		<parameter key="shop_buyable" value="chunk of crude iron,5892,30000." />
+		<parameter key="shop_buyable" value="lotery ticket,5958,40000." />
+		<parameter key="shop_buyable" value="draconian steel,5889,10000." />
+		<parameter key="shop_buyable" value="magic sulphur,5904,20000." />
+		<parameter key="shop_buyable" value="enchanted chicken wing,5891,40000." />
+		<parameter key="shop_buyable" value="royal steel,5887,30000." />
+		<parameter key="shop_buyable" value="hell steel,5888,20000." />
+		<parameter key="shop_buyable" value="engraved crossbow,5947,40000." />
+		<parameter key="shop_buyable" value="fighting spirit,5884,50000." />
+		<parameter key="shop_buyable" value="blue piece of cloth,5912,20000." />
+		<parameter key="shop_buyable" value="green piece of cloth,5910,20000." />
+		<parameter key="shop_buyable" value="red piece of cloth,5911,10000." />
+		<parameter key="shop_buyable" value="white piece of cloth,5909,10000." />
+		<parameter key="shop_buyable" value="green piece of cloth,5910,10000." />
+		<parameter key="shop_buyable" value="yellow piece of cloth,5914,10000." />
+		<parameter key="shop_buyable" value="blue piece of cloth,5912,10000." />
+		<parameter key="shop_buyable" value="brown piece of cloth,5913,10000." />
+	</parameters>
+</npc>
